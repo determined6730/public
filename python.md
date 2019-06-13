@@ -1,7 +1,7 @@
 # python 
 
 ## network 
-- [[requests]]
+- [[requests|python_requests]]
 
 
 ## references 
