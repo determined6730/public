@@ -1,9 +1,8 @@
-# REST
-Representational State Transfer   
-아주 쉽게 가보자!   
-- HTTP URI(Uniform Resource Identifier)를 통해 자원을 명시 (자원을 표현해야지 행위가 표현되면 안됨)
+# REST(Representational State Transfer)
+
+- HTTP URI(Uniform Resource Identifier)를 통해 자원을 명시 (자원을 표현해야지 행위가 표현되면 안됨)  
   ( http://xxx.com/api/v1/books ) -> books 라는 자원이 존재함 
-- HTTP Method(GET,POST,PUT,DELETE)를 통해 자원에 대한 [[CRUD]](행위) 적용
+- HTTP Method(GET,POST,PUT,DELETE)를 통해 자원에 대한 [[CRUD]] (행위) 적용
 
 더욱 자세한 사항(장점, 특징 등등) 은 나중에 작성하자 TODOLIST  
 
@@ -11,7 +10,7 @@ Representational State Transfer
 한 형식임     
 REST원리를 따르는 시스템을 RESTful이라고 부르기도 함 
 
-## [[REST_API]]
+## REST_API
 말그대로 REST기반으로 서비스 API를 구현한 것임  
 이것에 대한 여러 규칙 및 특징 장단점이 존재하며 이는 추후 작성 TODOLIST
 
