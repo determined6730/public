@@ -4,13 +4,22 @@
 ### pip install 
 ```bash
 pipenv install requests 
+```
+or
+```
 pip install requests
 ```
 ### source code 
+get source code
 ```
 git clone git://github.com/requests/requests.git
+```
+or
+```
 curl -OL https://github.com/requests/requests/tarball/master
-
+```
+install 
+```
 cd requests
 pip install .
 ```
