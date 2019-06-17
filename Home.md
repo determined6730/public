@@ -5,3 +5,6 @@ Welcome to the public wiki!
 
 ## Web
 - [[REST]]
+
+## Tools 
+- [[jupyter]]
