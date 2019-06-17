@@ -31,13 +31,12 @@ import requests
 url = "http://www.google.com"
 
 # for get method
- params = {
+params = {
 }
 # for post method
- data = {
+data = {
 }
 cookies = {
-    
 }
 
 # get
