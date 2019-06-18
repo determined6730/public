@@ -7,3 +7,5 @@
 
 ## Tools 
 - [[jupyter]]
+- [[tcpdump]]
+- [[vim]]
