@@ -1,5 +1,10 @@
 # vimrc
 
+2019-06-18 사용버전
+- [ ] ctag,cscope 셋팅 
+- [ ] 자동 인덴트 toggle
+
+
 ```
 " 한글 깨짐 현상 
 set fencs=ucs-bom,utf-8,euc-kr.latin1

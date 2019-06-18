@@ -1,5 +1,9 @@
 # vim shortcuts
 
+TODOLIST  
+맨위에 리스트업해줘야지 보고 넘어갈 수 있을듯.. 
+스크롤로 내려가면서 항목을 보기가 너무 어려움
+
 ### 커서 이동
 | <center>key | <center>description                      |
 | :------:    | :------:                                 |
