@@ -53,5 +53,5 @@ Plug 'mhinz/vim-startify'
 
 
 ## References 
- - <https://github.com/junegunn/vim-plug> 
-  - <https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/>
+- <https://github.com/junegunn/vim-plug> 
+- <https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/>
