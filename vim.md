@@ -10,7 +10,3 @@
 - [[nerdtree|vim_nerdtree]] : 파일 탐색기
 
 
-```
-I : hidden 파일 보기 
-cd : 선택된 디렉토리를 cwd로 변경
-```
