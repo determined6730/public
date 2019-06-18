@@ -1,10 +1,8 @@
 # vim
 
-### vim 환경설정 
-[[vim environment|vim_environment]]
+### [[vim 환경설정|vim_environment]]
 
-### vim 단축키 
-[[vim shortcuts|vim_shortcuts]]
+### [[vim 단축키|vim_shortcuts]]
 
 ### vim plugin
 - vim plugin을 관리하기 위함 : [[Vim-Plug|vim_vim-plug]]
