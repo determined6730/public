@@ -1,7 +1,7 @@
 # vimwiki
 
 ## install 
-[[vim-plug]] 를 이용해서 설치 가능 
+[[vim-plug|vim_vim-plug]] 를 이용해서 설치 가능 
 ```
 Plug 'vimwiki/vimwiki'
 ```
