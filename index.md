@@ -14,6 +14,9 @@
 - [[vim]]
 - [[gdb]]
 
+## OS
+- [[linux]]
+
 
 ## TODO
 - [[radare2]]
