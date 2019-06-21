@@ -12,3 +12,4 @@
 - [[jupyter]]
 - [[tcpdump]]
 - [[vim]]
+- [[gdb]]

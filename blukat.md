@@ -1,5 +1,10 @@
 # blukat
 
+### file bluakt
+```
+./blukat: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=cdf0b81df732844320ce82d036143c402f821439, not stripped
+```
+
 ### checksec blukat
 Arch:     amd64-64-little
 RELRO:    Partial RELRO
@@ -41,6 +46,12 @@ int main(){
 	return 0;
 }
 ```
+
+입력 받는 곳이 buf변수에 128 length를 입력 받음   
+buf는 100 length의 local variable 임   
+[buf][fp][canary]....   
+있어서 fp를 넘길수 있고 동시에 canary까지 덮을 수 있는데 .... 
+
 
 
 
