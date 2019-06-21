@@ -49,8 +49,14 @@ int main(){
 
 입력 받는 곳이 buf변수에 128 length를 입력 받음   
 buf는 100 length의 local variable 임   
-[buf][fp][canary]....   
-있어서 fp를 넘길수 있고 동시에 canary까지 덮을 수 있는데 .... 
+[fp][buf][canary]....   
+있어서 fp를 넘길수 있고 동시에 canary까지 덮을 수 있는데 ....   
+
+buf에 입력을 받은 뒤에 password와 buf를 비교후 else로 가서 exit(0)를 호출하게 됨   
+
+fp 로 부터 읽어온 값을 맞추지 못하면 곧장 exit(0)으로 흘러가게 되는데..    
+
+exit(0)쪽 흐름을 분석해보자...
 
 
 

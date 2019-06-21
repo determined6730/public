@@ -13,3 +13,7 @@
 - [[tcpdump]]
 - [[vim]]
 - [[gdb]]
+
+
+## TODO
+- [[radare2]]
