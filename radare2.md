@@ -1,5 +1,11 @@
 # radare2
 
+## install 
+```
+git clone https://github.com/radare/radare2.git
+sys/install.sh
+```
+
 
 ## references 
 - 공식 : <https://rada.re/r/>
