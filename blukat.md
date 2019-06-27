@@ -10,7 +10,7 @@ Arch:     amd64-64-little
 RELRO:    Partial RELRO
 Stack:    Canary found
 [[NX]]:       NX enabled
-PIE:      No PIE (0x400000)
+[[PIE]]:      No PIE (0x400000)
 
 
 ## blukat.c 
@@ -56,7 +56,6 @@ buf에 입력을 받은 뒤에 password와 buf를 비교후 else로 가서 exit(
 
 fp 로 부터 읽어온 값을 맞추지 못하면 곧장 exit(0)으로 흘러가게 되는데..    
 
-exit(0)쪽 흐름을 분석해보자...
 
 
 
