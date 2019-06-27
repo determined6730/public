@@ -19,7 +19,7 @@ gcc -fPIE -o test_pie test.c
 chekcsec [filename] 
 ```
 [[/images/pie/pie1.PNG]]  
-[[/images/pie/pie4.PNG]]  
+[[/images/pie/pie4.png]]  
 
 
 ### symbol check
