@@ -33,10 +33,10 @@ objdump -d test_pie
 ```
 
 왼쪽 스크린샷이 *test_pie* 이며 우측 스크린샷이 *test* 파일임   
-[[/images/pie/pie2.PNG]]    
+[[/images/pie/pie2.png]]    
 symbol이 맵핑된 주소를 보게 되면 PIE가 적용된 경우 작은 값으로 맵핑되어 있으며, PIE가 적용 안되었을 때에는 절대값으로 맵핑되어 있음  
 gdb를 통해서 실제 실행될 때 주소값을 확인해 보면 PIE가 적용되지 않은 실행파일은 disassemble해서 보인 주소값이 그대로 사용되며 PIE 가 적용된 파일은 맵핑된 주소값으로부터 해당 symbol의 주소값(offset)이 더해져 사용된다. 
-[[/images/pie/pie3.PNG]]
+[[/images/pie/pie3.png]]
 
 
 
