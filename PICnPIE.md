@@ -1,4 +1,10 @@
-# PIE(Position Independent Executable)
+# PIC(Position Independent Code) & PIE(Position Independent Executable)
+PIC와 PIE에 대해서 설명하고자 하는데 [[library]] 에 대해서 지식을 알고 있으면 좋다.
+
+##PIC
+
+
+## PIE 
 위치 독립 실행 파일로 실행될 때마다 매핑되는 주소가 어디든 상관없이 실행되는 파일   
 맵핑되는 주소와 상관없이 실행이 가능하단 뜻은 symbol들의 주소값이 절대값이 아니라 상대값(offset)이란 것  
 PIE가 걸린 파일과 안걸린 파일을 보면 좀더 확연히 차이를 알 수 있음   
@@ -19,6 +25,9 @@ gcc -fPIE -o test_pie test.c
 chekcsec [filename] 
 ```
 [[/images/pie/pie1.PNG]]  
+```
+file [filename]
+```
 [[/images/pie/pie4.png]]  
 
 
