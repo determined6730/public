@@ -55,6 +55,7 @@ buf는 100 length의 local variable 임
 buf에 입력을 받은 뒤에 password와 buf를 비교후 else로 가서 exit(0)를 호출하게 됨   
 
 fp 로 부터 읽어온 값을 맞추지 못하면 곧장 exit(0)으로 흘러가게 되는데..    
+이걸 어떻게 뭐 해야하는지...
 
 
 
