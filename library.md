@@ -57,6 +57,30 @@ gcc -o test test.c -ltest -L. -no-pie --static
 ## shared library 
 공유 라이브러리를 사용하여 컴파일을 하면 링커가 실행파일에 **실행될 때 우선 이 라이브러리를 로딩시킬것** 표시 하고 실제 바이너리가 실행될 때 라이브러리 오브젝트 파일을 가져와 사용하게 됨   
 
+```
+# ldd 를 사용해서 실행파일이 어떤 라이브러리를 필요로 하는지 확인 가능 
+ubuntu@ip-172-26-12-50:~/workspace/library$ ldd test
+        linux-vdso.so.1 (0x00007ffc4cd5e000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fa0d5e39000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fa0d622a000)
+```
+- 실행 파일에 내용을 복사 하지 않아 사이즈가 줄어둠 
+- 바이너리 실행시 라이브러리가 꼭 필요함
+- 라이브러리가 어느 주소에 mapping될지 모르기 때문에 프로그램에서 해당 함수에 대한 주소를 저장 X 
+- 실행 시 함수 호출(함수의 주소를 알아내기 위한)을 위한 로직이 따로 필요 
+
+### shared library 제작 
+```
+```
+
+### shared library를 사용해 바이너리 컴파일 
+
+
+
+
+
+
+
 
 
 ## dinamic library 
