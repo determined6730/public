@@ -23,6 +23,9 @@ gcc -c libtest.c
 # c option -> libtest.a 가 없다면 새롭게 생성
 ar rc libtest.a libtest.o
 
+# 해당 library의 내용을 확인하고 싶을 때 ar -t 를 사용하면 됨
+ar -t ./libtest.a
+
 # objdump -D libtest.a 를 해보면 실제로 testlib.c에 작성한 function을 assem으로 확인 할 수 있음. 
 
 # file libtest.a 를 통해 파일 타입을 확인해보면 current ar archive라고 나옴 
@@ -36,6 +39,9 @@ file libtest.a
 # 표준라이브러리 디렉토리는 /etc/ld.so.conf에 명시되어있음 
 # 테스트용이며 분석을 편하게 하기 위해 -no-pie옵션을 통해 PIE disable 시킴 
 gcc -o test test.c -ltest -L. -no-pie
+
+# 또는 라이브러리 전체 명을 적어줘도 가능함. 자동으로 링킹시켜줌 :
+gcc -o test test.c libtest.a
 ```
 
 *objdump* 를 통해서 확인을 해보면 libtest관련 code 가 포함된 것을 확인 할 수 있음  
@@ -49,7 +55,7 @@ gcc -o test test.c -ltest -L. -no-pie --static
 
 
 ## shared library 
-
+공유 라이브러리를 사용하여 컴파일을 하면 링커가 실행파일에 **실행될 때 우선 이 라이브러리를 로딩시킬것** 표시 하고 실제 바이너리가 실행될 때 라이브러리 오브젝트 파일을 가져와 사용하게 됨   
 
 
 
