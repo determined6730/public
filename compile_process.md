@@ -47,8 +47,8 @@ int main(void){
 void headerF(void){
         printf(" this is funcion in header files\n");
 }
-
-
+```
+```
 // gcc -E 진행 
 gcc -E test.c
 ```
@@ -117,9 +117,9 @@ define관련 내용들이 정리된 것을 확인 할 수 있음
 
 ```
 gcc -S test.i 
+```
 
--------------------------------------------------------------
-
+```
         .file   "test.c"
         .text
         .section        .rodata
