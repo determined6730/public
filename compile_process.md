@@ -188,3 +188,56 @@ main:
         .section        .note.GNU-stack,"",@progbits
 ```
 
+## assemble 과정  (test.s -> test.o)
+위에서 생성된 assembly code를 relocatable object code(기계어)로 변환되는 과정   
+
+```
+# -c option : assemble 과정 까지만 진행하고 linking은 진행 하지않음 
+gcc -c test.s
+```
+
+```
+ubuntu@ip-172-26-12-50:~/workspace/compile_process$ objdump -d test.o
+
+test.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <headerF>:
+   0:   55                      push   %rbp
+   1:   48 89 e5                mov    %rsp,%rbp
+   4:   48 8d 3d 00 00 00 00    lea    0x0(%rip),%rdi        # b <headerF+0xb>
+   b:   e8 00 00 00 00          callq  10 <headerF+0x10>
+  10:   90                      nop
+  11:   5d                      pop    %rbp
+  12:   c3                      retq
+
+0000000000000013 <main>:
+  13:   55                      push   %rbp
+  14:   48 89 e5                mov    %rsp,%rbp
+  17:   48 83 ec 10             sub    $0x10,%rsp
+  1b:   c7 45 f4 0a 00 00 00    movl   $0xa,-0xc(%rbp)
+  22:   c7 45 f8 14 00 00 00    movl   $0x14,-0x8(%rbp)
+  29:   e8 00 00 00 00          callq  2e <main+0x1b>
+  2e:   8b 45 f4                mov    -0xc(%rbp),%eax
+  31:   89 45 fc                mov    %eax,-0x4(%rbp)
+  34:   8b 45 f8                mov    -0x8(%rbp),%eax
+  37:   89 45 f4                mov    %eax,-0xc(%rbp)
+  3a:   8b 45 fc                mov    -0x4(%rbp),%eax
+  3d:   89 45 f8                mov    %eax,-0x8(%rbp)
+  40:   8b 55 f8                mov    -0x8(%rbp),%edx
+  43:   8b 45 f4                mov    -0xc(%rbp),%eax
+  46:   b9 00 01 00 00          mov    $0x100,%ecx
+  4b:   89 c6                   mov    %eax,%esi
+  4d:   48 8d 3d 00 00 00 00    lea    0x0(%rip),%rdi        # 54 <main+0x41>
+  54:   b8 00 00 00 00          mov    $0x0,%eax
+  59:   e8 00 00 00 00          callq  5e <main+0x4b>
+  5e:   b8 00 00 00 00          mov    $0x0,%eax
+  63:   c9                      leaveq
+  64:   c3                      retq
+
+```
+
+
+## linking 과정
