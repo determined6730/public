@@ -239,5 +239,22 @@ Disassembly of section .text:
 
 ```
 
+assembly code에서 object code로 변환한 것을 확인 할 수 있음. 
 
-## linking 과정
+```
+ubuntu@ip-172-26-12-50:~/workspace/compile_process$ file test.o
+test.o: ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), not stripped
+
+```
+
+## linking 과정 (test.o -> test)
+위 assemble과정이 끝난뒤 object file이 생성이 되는데, 여전히 실행 가능한 파일은 아님  
+assemble의 결과에서 main함수의 call(첫번째 call은 headerF함수이고 두번째 call은 pinrtf)을 확인하게 되면 단순히 그다음 위치로 가는것을 확인 할 수가 있음  
+즉 call하는 부분에서 symbol들의 주소가 정확하지 않다는 것임..  이런 부분이  링킹과정에서 어떻게 변화는지 확인을 해보면 좋을것 같음  
+
+링커의 역활은 assemble과정에서 생성된 object file을 모아서 하나의 바이너리로 만들어 지도록 도와주는 역활  
+object file이 여러개가 있다면 이 여러개를 합쳐서 각각의 영역( text, data 영역들..)을 모아서 하나의 바이너리로 만들어 준다고 보면 됨  
+여기서 말하는 object file이란 사용자가 작성한 프로그램, 표준 c 라이브러리, 사용자 라이브러리등이 된다.   
+즉 위에서 예시로 든 경우는 test.o 파일 하나밖에 없어 보이지만 printf를 사용하기 때문에 이미 만들어진 표준 C 라이브러리 오브젝트 파일을 링크하게 됨  
+
+
