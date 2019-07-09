@@ -18,7 +18,7 @@
 
 ## OS
 - [[linux]]
-- [[compile_process]]
+- [[컴파일과정|compile_process]]
 
 ## TODO
 - [[radare2]]  :  아직 사용법을 전혀 모름.. 
@@ -31,6 +31,7 @@
 - [[library]]
 - [[object_file]]
 - [[PLT]]
+- [[ld_preload vs ld_library_path|ld-preload_vs_ld-library-path]]
 
 
 

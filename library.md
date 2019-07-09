@@ -76,15 +76,49 @@ ubuntu@ip-172-26-12-50:~/workspace/library$ ldd test
 
 ### shared library 제작 
 ```
-# gcc -fPIC option : object file을 생성할 때 다른 
+# gcc -fPIC option : object file을 생성할 때 프로세스의 가상 주소 공간 안에서 어떤 지역에 로드될수 있도록 코드를 컴파일 
+# -fPIC vs -fpic
+# -c option 링킹 전단계까지 진행 즉, object file까지만 생성되게끔 함 
+gcc -c -fpic -Wall -Werror test.c
+
+# -shared option : shared library 제작 한다는 뜻 
+gcc -shared -o libtest.so test.o
+
 ```
 ### shared library를 사용해 바이너리 컴파일 
+```
+# -rpath , Wl 관련 ... 
+# -rpath option : runtime시에 해당 library가 어디있는지 위치를 알려줘야 함 LD_LIBRARY_PATH등에 라이브러리 패스를 기본으로 찾게 되는데   
+#                 여기에 해당 라이브러리가 없다면 에러가 남. 이럴경우 보통 LD_LIBRARY_PATH에 위치를 추가해주면 되는데 단순히  
+#                 LD_LIBRARY_PATH=/home/username/foo:$LD_LIBRARY_PATH 라고 해주면 되는게 아니라 export를 통해서 환경변수를 바꿔줘야 child 프로세스에 모두 적용이 됨  
+#                 여튼 LD_LIBRARY_PATH를 통해서 바꾸지 않고 링킹타임에 rpath를 통해서 위치를 지정하게 할 수가 있음 
+# Wl(엘) option : linker에게 콤바로 된 부분을 알려주기 위함   
+#                 즉 rpath 어쩌고 저쩌고는 링커에게 알려주기 위함임 
+# -L option : -L. 이것 or -L/home/username/foo 이것은 -L 자체는 라이브러리가 어디있는지 알려줌이고 바로뒤에 library의 path를 적어주면 된다.   
+# -l option : library의 이름을 나타내며 lib과 so를 뺀 순수 이름 부분만 넣어주면 됨 
+gcc -L. -Wl,-rpath=/home/username/foo -Wall -o test main.c -lfoo
 
+```
+## ldconfig 
+```
+cp libfoo.so /usr/lib
+chmod 0755 /usr/lib/libfoo.so 
+# ldconfig 명령어는 현재 자신이 관리하고있는 모든 shared library들에 대해 업데이트를 해서 cache화 해놓는다. 
+# 즉 런타임때 특정 라이브러리를 원하면 여기서부터 목록을 뒤져 메모리에올리고 링킹해주는 역활이다. 
+ldconfig 
+# 적용이 되었는지 확인해보면 됨 
+ldconfig -p | grep foo
+# 제대로 잘 적용이 되었는지 -L 옵션을 제외하고 컴파일 해보자 이미 ldconfig에 의해서 해당 library는 /usr/lib에 있기 때문에 여기서 찾을수 있음
+gcc -Wall -o test test.c -lfoo
+# 실행하면 제대로 된다 
 
-
-
-
-
+```
+시템에서 라이브러리를 관리하는 것이라고 보면 된다. 
+즉 ld.so가 라이브러리를 찾아갈때 ldconfig에서 제작한 cache를 통해서 라이브러리를 찾아 로딩한다고 보면됨   
+실행 파일이 메모리에 적재되면 /lib/ld-linux.so에 의해 동적 링킹이 일어난다. (/lib/ld.so는 a.out 형식, /lib/ld-linux.so는 ELF 실행 포맷에서 사용한다.) 그리고 /lib/ld.so 모듈은 /etc/ld.so.cache 파일을 이용하여 실행 파일에서 필요로 하는 soname과 일치하는 라이브러리를 찾는다.(/etc/ld.so.cache 파일은 라이브러리가 어떠한 파일에 포함되어 있는지에 대한 정보를 가지고 있다. /etc/ld.so.cache 는 ldconfig를 통해서 만들어진다.
+	ldconfig는 /etc/ld.so.conf에 지정된 디렉토리를 찾아다니면서 발견된 동적 라이브러리들에 대한 soname에 의해서 불리어지는 심볼릭 링크를 만들어낸다. ld.so가 파일의 이름을 얻으려고 할 때 이것은 soname을 발견한 파일의 디렉토리를 선택하는 그러한 일을 한다. 그리고 이렇게 함으로서 우리가 라이브러리를 추가할 때마다 ldconfig를 수행할 필요는 없게 되는 것이다. ldconfig는 리스트에 새로운 디렉토리를 만들어 널때만 실행시키면 된다. soname은 라이브러리 내에 포함되어 있는데, 위에 -soname libmyfile.so.1에서 libmyfile.so.1이 soname이다. soname은 버전을 관리하는 것과 관계가 있다.
+//TODOLIST 위내용을 정리해보자 ㅠㅠ 
+// --no-as-needed -ldl option은 뭔지 정리해봅시다...
 
 ## loader가 하는 역활 
 ## 공유메모리는 어떻게 공유하는걸까?
