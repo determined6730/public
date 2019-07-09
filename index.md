@@ -29,6 +29,8 @@
 - section 
 - 메모리 구역
 - [[library]]
+- [[object_file]]
+- [[PLT]]
 
 
 

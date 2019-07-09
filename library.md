@@ -69,10 +69,15 @@ ubuntu@ip-172-26-12-50:~/workspace/library$ ldd test
 - 라이브러리가 어느 주소에 mapping될지 모르기 때문에 프로그램에서 해당 함수에 대한 주소를 저장 X 
 - 실행 시 함수 호출(함수의 주소를 알아내기 위한)을 위한 로직이 따로 필요 
 
+공유 라이브러리의 작동은 [[PLT]](Procedure Linkage Table)라고 하는 데이터 청크로 작동함 
+프로그램이 호출하는 모든 함수를 나열하고 있는 프로그램의 테이블임  
+프로그램이 시작된 후 함수가 호출 될 때, 해당 함수의 address를 찾게 되고 이를 찾게되면 PLT에 적재함 이설명은 PLT 참고   
+
+
 ### shared library 제작 
 ```
+# gcc -fPIC option : object file을 생성할 때 다른 
 ```
-
 ### shared library를 사용해 바이너리 컴파일 
 
 
@@ -84,5 +89,7 @@ ubuntu@ip-172-26-12-50:~/workspace/library$ ldd test
 ## loader가 하는 역활 
 ## 공유메모리는 어떻게 공유하는걸까?
 
+//TODOLIST 2번째 reference 정리할것...
 ## references
 - kldp library관련 wiki : <http://wiki.kldp.org/HOWTO/html/Program-Library-HOWTO/introduction.html>
+- load time relocation of shared libraries : <https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries#id14> 

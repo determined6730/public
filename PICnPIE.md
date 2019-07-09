@@ -47,6 +47,9 @@ symbol이 맵핑된 주소를 보게 되면 PIE가 적용된 경우 offset 값�
 
 
 
+## references 
+- PIC 관련 artical : <https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries>
+- PIC 관련 x64 article : <https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries>
 
 
 
