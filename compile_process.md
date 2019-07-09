@@ -489,3 +489,6 @@ code 작성 부터 컴파일 링킹 까지 과정을 봤지만 실제 내부는 
 - compiler 
 - linking 에 필요한 부분들
 - 등등 
+
+## references 
+- linking 관련 : <file:///C:/Users/samsung/AppData/Local/Microsoft/Windows/INetCache/IE/OG4URWGQ/11-linking.pdf>
