@@ -14,18 +14,21 @@
 - [[vim]]
 - [[gdb]]
 - [[objdump]]
+- [[tmux]]
 
 ## OS
 - [[linux]]
-
+- [[compile_process]]
 
 ## TODO
 - [[radare2]]  :  아직 사용법을 전혀 모름.. 
-- [[compile_process]]
 - relocatable_vs_position-independent-code
 - page
 - relocatable
 - position_independent_code
+- section 
+- 메모리 구역
+- [[library]]
 
 
 

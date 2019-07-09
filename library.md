@@ -18,7 +18,7 @@ library는 링킹 방법에 따라 static, dynamic 두가지 종류로 나뉨
 gcc -c libtest.c 
 
 # make archive 
-# ar은 archive 로 static library 만들때 사용되며
+# ar은 archiver 로 static library 만들때 사용되며
 # r option -> libtest.o 를 libtest.a에 새롭게 포함
 # c option -> libtest.a 가 없다면 새롭게 생성
 ar rc libtest.a libtest.o
@@ -81,9 +81,8 @@ ubuntu@ip-172-26-12-50:~/workspace/library$ ldd test
 
 
 
+## loader가 하는 역활 
+## 공유메모리는 어떻게 공유하는걸까?
 
-
-## dinamic library 
-
-
-
+## references
+- kldp library관련 wiki : <http://wiki.kldp.org/HOWTO/html/Program-Library-HOWTO/introduction.html>
