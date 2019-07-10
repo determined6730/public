@@ -17,6 +17,7 @@
 - [[tmux]]
 
 ## OS
+- [[android]]
 - [[linux]]
 - [[컴파일과정|compile_process]]
 
