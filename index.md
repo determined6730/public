@@ -34,6 +34,7 @@
 - [[PLT]]
 - [[ld_preload vs ld_library_path|ld-preload_vs_ld-library-path]]
 - [[hooking]]
+- [[frida]]
 
 
 
