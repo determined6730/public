@@ -25,3 +25,4 @@ apktool d sample.apk
 ```
 d2j-dex2jar.sh classes.dex
 ```
+5. JD-GUI(<http://jd.benow.ca/>)을 이용해서 분석 시작 
