@@ -36,6 +36,9 @@
 - [[hooking]]
 - [[frida]]
 
+## Language
+- [[smali]]
+
 
 
 ## docs 
