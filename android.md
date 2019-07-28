@@ -33,4 +33,24 @@ d2j-dex2jar.sh classes.dex
 ```
 5. JD-GUI(<http://jd.benow.ca/>)을 이용해서 분석 시작 
 
+## repackaging
+### apktool rebuild 
+```
+<application 
+...
+android:debuggable="true"
+...
+```
 
+```
+apktool b [folder-name] -o new.apk
+```
+### selfsign
+
+```
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore app-debug.apk alias_name
+```
+
+##
+- https://crosp.net/blog/software-development/mobile/android/android-reverse-engineering-debugging-smali-using-smalidea/
