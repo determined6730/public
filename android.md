@@ -12,6 +12,10 @@
 adb shell pm list packages -f
 package:/data/app/com.lgeha.nuts-uXMVK36q5J3VG6DQBiQhlA==/base.apk=com.lgeha.nuts
 ```
+or 
+```
+apk extractor 라는 application을 통해서 추출 가능 함 
+```
 1. apk file extraction
 0번에서 나온결과물에서 처음부터 base.apk까지가 package_path 가 됨  
 adb shell 밖에서 pull 하면 apk을 얻을 수 있음 
