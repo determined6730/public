@@ -8,6 +8,7 @@
 ## ctfs
 - [[pwnable.kr]]
 - [[temp]]
+- [[ctf_tools]]
 
 ## Tools 
 - [[jupyter]]
