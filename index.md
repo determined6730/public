@@ -1,3 +1,4 @@
+[[wiki]]
 
 ## Programming
 - [[python]]
@@ -17,6 +18,7 @@
 - [[gdb]]
 - [[objdump]]
 - [[tmux]]
+- [[git]]
 
 ## OS
 - [[android]]
