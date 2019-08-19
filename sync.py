@@ -7,6 +7,7 @@ def exec_command(str):
     return result
 
 
+exec_command("git pull")
 
 re = exec_command("git status")
 
