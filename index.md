@@ -24,6 +24,7 @@
 - [[android]]
 - [[linux]]
 - [[컴파일과정|compile_process]]
+- [[kali]]
 
 ## TODO
 - [[radare2]]  :  아직 사용법을 전혀 모름.. 
