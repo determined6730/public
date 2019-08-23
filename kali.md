@@ -33,3 +33,30 @@ exec -a "$0" "$HERE/chrome" "$0" --no-sandbox --user-data-dir
 apt-get install browser-plugin-freshplayer-pepperflash
 ```
 
+
+
+
+## 한글 
+```
+apt-get install fcitx-lib*
+apt-get install fcitx-hangul
+apt-get install fonts-nanum
+apt-get install fonts-nanum*
+im-config
+# ok -> yes -> fcitx -> ok 
+fcitx-configtool
+# InputMethod left-bottom click + button
+# only show current language check 
+# global config setting key 
+reboot
+```
+
+## kakaotalk 
+```
+apt-get isntall wine wine32
+
+
+```
+
+
+## sshd
