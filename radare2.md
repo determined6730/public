@@ -71,7 +71,10 @@ axt @@ str.* -> 이게 뭐냐...
 ```shell
 vv # graph mode 
 c # cursor mode   
-   b # break point
+   ㄴ b # break point
+   ㄴ q # exit cursor mode
+/ [string] # highlight
+g [offset] # go offset 
 ```
 
 ## references 
