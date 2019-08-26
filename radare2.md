@@ -55,9 +55,10 @@ q를 통해서 그래프 모드 종료
 
 ### strings 
 ```bash
-fs # string이 어떻게 분류되어있는지 보여줌 
-fs strings; f -> 스트링을 보여줌 
-izzq~[string] -> [string]을 찾아줌 
+# string이 어떻게 분류되어있는지 보여줌 
+fs 
+fs strings; f # 스트링을 보여줌 
+izzq~[string] # [string]을 찾아줌 
 
 axt @@ str.* -> 이게 뭐냐...
 
