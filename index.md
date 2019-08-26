@@ -20,6 +20,7 @@
 - [[objdump]]
 - [[tmux]]
 - [[git]]
+- [[terminator]]
 
 ## OS
 - [[android]]
@@ -42,6 +43,14 @@
 - [[hooking]]
 - [[frida]]
 - [[docker]]
+
+## books 
+
+### have to read 
+- Hacking: The Art of Exploitation, 2nd Edition
+- The Shellcoder's Handbook: Discovering and Exploiting Security Holes, 2nd Edition 
+
+### done
 
 ## Language
 - [[smali]]
