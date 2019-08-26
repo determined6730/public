@@ -68,7 +68,7 @@ axt @@ str.* -> 이게 뭐냐...
 
 
 ### graph mode 
-```base
+```shell
 vv # graph mode 
 c # cursor mode   
    b # break point
