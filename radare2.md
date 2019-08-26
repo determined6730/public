@@ -1,7 +1,7 @@
 # radare2
 
 ## install 
-```
+```bash
 git clone https://github.com/radare/radare2.git
 sys/install.sh
 ```
@@ -55,29 +55,23 @@ q를 통해서 그래프 모드 종료
 
 ### strings 
 ```bash
-# string이 어떻게 분류되어있는지 보여줌 
-fs 
-# 스트링을 보여줌 
-fs strings; f 
-# [string]을 찾아줌 
-izzq~[string] 
+fs # string이 어떻게 분류되어있는지 보여줌 
+fs strings; f # 스트링을 보여줌 
+izzq~[string] # [string]을 찾아줌 
 
 axt @@ str.* -> 이게 뭐냐...
 
-/c [addr] : 문자열이 어디서 참조되는지 알 수 있음. 
-/c instr : instruction을 검색하는 명령어인데 문자열 주소 그대로 가져다 쓰지 않는 경우 아무결과도 X
+/c [addr] # 문자열이 어디서 참조되는지 알 수 있음. 
+/c instr  # instruction을 검색하는 명령어인데 문자열 주소 그대로 가져다 쓰지 않는 경우 아무결과도 X
 
 ```
 
 
 ### graph mode 
 ```base
-# graph mode 
-vv 
-# cursor mode 
-c  
-  # break point 
-  b 
+vv # graph mode 
+c # cursor mode   
+   b # break point
 ```
 
 ## references 
