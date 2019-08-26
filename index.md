@@ -10,6 +10,7 @@
 - [[pwnable.kr]]
 - [[temp]]
 - [[ctf_tools]]
+- [[ctf_tech]]
 
 ## Tools 
 - [[jupyter]]
