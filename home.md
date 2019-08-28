@@ -31,12 +31,12 @@
 
 ## TODO
 
-* \[\[radare2\]\]  :  아직 사용법을 전혀 모름.. 
+* \[\[radare2\]\]  :  아직 사용법을 전혀 모름..
 * relocatable\_vs\_position-independent-code
 * page
 * relocatable
 * position\_independent\_code
-* section 
+* section
 * 메모리 구역
 * \[\[library\]\]
 * \[\[object\_file\]\]
@@ -53,4 +53,3 @@
 ## docs
 
 * System V Application Binary Interface [https://www.uclibc.org/docs/psABI-x86\_64.pdf](https://www.uclibc.org/docs/psABI-x86_64.pdf)
-
