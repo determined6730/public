@@ -1,22 +1,28 @@
-# compile 과정 
-컴파일할때 어떤 일들이 일어나는지 궁금해서..   
+# compile 과정
 
-test.c -> test.i -> test.s -> test.o -> test   
+컴파일할때 어떤 일들이 일어나는지 궁금해서..
+
+test.c -&gt; test.i -&gt; test.s -&gt; test.o -&gt; test
 
 위 과정에 대해서 간략하게 하나씩 ..
 
+### 전처리 과정 \(test.c -&gt; test.i\)
 
-## 전처리 과정 (test.c -> test.i) 
-"#"으로 시작하는 전처리 구문들에 대해서 정리하는 작업   
-- #include  -> header file 삽입
-  "headerTest.h" -> 현재 폴더 위치에서 찾게됨 
-  <stdio.h> -> 시스템에 저장된 header 파일 기본 위치에서 순서대로 찾게됨 
-- #define or #ifdef ..  -> macro관련 치환 
- 
-### 예제 
-test.c headerTest.h 파일 제작 후 전처리 진행(**gcc -E**)
+"\#"으로 시작하는 전처리 구문들에 대해서 정리하는 작업
 
-```C
+* **include  -&gt; header file 삽입**
+
+  "headerTest.h" -&gt; 현재 폴더 위치에서 찾게됨 
+
+   -&gt; 시스템에 저장된 header 파일 기본 위치에서 순서대로 찾게됨 
+
+* **define or \#ifdef ..  -&gt; macro관련 치환**
+
+#### 예제
+
+test.c headerTest.h 파일 제작 후 전처리 진행\(**gcc -E**\)
+
+```c
 // test.c 
 #include <stdio.h>
 #include "headerTest.h"
@@ -27,17 +33,17 @@ test.c headerTest.h 파일 제작 후 전처리 진행(**gcc -E**)
 
 #if debug
 void test{void}(
-	printf("test\n");
+    printf("test\n");
 }
 #endif
 
 int main(void){
-	int a = 10;
-	int b = 20;
-	headerF();
-	SWAP(a,b);
-	printf("a = %d b = %d MAX = %d\n",a,b,MAX);
-	return 0;
+    int a = 10;
+    int b = 20;
+    headerF();
+    SWAP(a,b);
+    printf("a = %d b = %d MAX = %d\n",a,b,MAX);
+    return 0;
 }
 
 
@@ -48,12 +54,15 @@ void headerF(void){
         printf(" this is funcion in header files\n");
 }
 ```
-```
+
+```text
 // gcc -E 진행 
 gcc -E test.c
 ```
-### 결과 
-```
+
+#### 결과
+
+```text
 gcc -E test.c > test.i 
 cat test.i 
 
@@ -82,44 +91,46 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 
 # 3 "headerTest.h"
 void headerF(void){
-	printf(" this is funcion in header files\n");
+    printf(" this is funcion in header files\n");
 }
 # 3 "test.c" 2
 # 14 "test.c"
 int main(void){
-	int a = 10;
-	int b = 20;
-	headerF();
-	{int c = a; a = b; b = c;};
-	printf("a = %d b = %d MAX = %d\n",a,b,256);
-	return 0;
+    int a = 10;
+    int b = 20;
+    headerF();
+    {int c = a; a = b; b = c;};
+    printf("a = %d b = %d MAX = %d\n",a,b,256);
+    return 0;
 }
-```  
-위 내용을 보면 실제 headerTest.h파일 내용이 삽입된 것을 확인할 수 있으며,   
+```
+
+위 내용을 보면 실제 headerTest.h파일 내용이 삽입된 것을 확인할 수 있으며,  
 headerTest.h파일 위에 삽입된 내용들은 stduio.h파일임  
-define관련 내용들이 정리된 것을 확인 할 수 있음 
+define관련 내용들이 정리된 것을 확인 할 수 있음
 
-## 컴파일 과정 (test.i -> test.S)
+### 컴파일 과정 \(test.i -&gt; test.S\)
+
 컴파일 과정은 상당히 복잡함.. 이부분에 대해선 나중에 기회되면 자세히 공부해보고 싶음 //TODOLIST  
-여러 작업들이 이루어진 후에 최종적으로 어셈블리어(test.S)가 결과물로 나오게됨   
+여러 작업들이 이루어진 후에 최종적으로 어셈블리어\(test.S\)가 결과물로 나오게됨
 
-- hello.i
-- 어휘분석
-- 구분분석
-- 의미분석
-- 중간표현 생성 
-- SSA(Static Single Assignment)
-- SSA Optimizer
-- RTL(Register Transfer Language)
-- RTL Optimizer
-- Code Generator
-- hello.S
+* hello.i
+* 어휘분석
+* 구분분석
+* 의미분석
+* 중간표현 생성 
+* SSA\(Static Single Assignment\)
+* SSA Optimizer
+* RTL\(Register Transfer Language\)
+* RTL Optimizer
+* Code Generator
+* hello.S
 
-```
-gcc -S test.i 
+```text
+gcc -S test.i
 ```
 
-```
+```text
         .file   "test.c"
         .text
         .section        .rodata
@@ -188,15 +199,16 @@ main:
         .section        .note.GNU-stack,"",@progbits
 ```
 
-## assemble 과정  (test.s -> test.o)
-위에서 생성된 assembly code를 relocatable object code(기계어)로 변환되는 과정   
+### assemble 과정  \(test.s -&gt; test.o\)
 
-```
+위에서 생성된 assembly code를 relocatable object code\(기계어\)로 변환되는 과정
+
+```text
 # -c option : assemble 과정 까지만 진행하고 linking은 진행 하지않음 
 gcc -c test.s
 ```
 
-```
+```text
 ubuntu@ip-172-26-12-50:~/workspace/compile_process$ objdump -d test.o
 
 test.o:     file format elf64-x86-64
@@ -236,29 +248,27 @@ Disassembly of section .text:
   5e:   b8 00 00 00 00          mov    $0x0,%eax
   63:   c9                      leaveq
   64:   c3                      retq
-
 ```
 
-assembly code에서 object code로 변환한 것을 확인 할 수 있음. 
+assembly code에서 object code로 변환한 것을 확인 할 수 있음.
 
-```
+```text
 ubuntu@ip-172-26-12-50:~/workspace/compile_process$ file test.o
 test.o: ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), not stripped
-
 ```
 
-## linking 과정 (test.o -> test)
+### linking 과정 \(test.o -&gt; test\)
+
 위 assemble과정이 끝난뒤 object file이 생성이 되는데, 여전히 실행 가능한 파일은 아님  
-assemble의 결과에서 main함수의 call(첫번째 call은 headerF함수이고 두번째 call은 pinrtf)을 확인하게 되면 단순히 그다음 위치로 가는것을 확인 할 수가 있음  
-즉 call하는 부분에서 symbol들의 주소가 정확하지 않다는 것임..  이런 부분이  링킹과정에서 어떻게 변화는지 확인을 해보면 좋을것 같음  
+assemble의 결과에서 main함수의 call\(첫번째 call은 headerF함수이고 두번째 call은 pinrtf\)을 확인하게 되면 단순히 그다음 위치로 가는것을 확인 할 수가 있음  
+즉 call하는 부분에서 symbol들의 주소가 정확하지 않다는 것임.. 이런 부분이 링킹과정에서 어떻게 변화는지 확인을 해보면 좋을것 같음
 
 링커의 역활은 assemble과정에서 생성된 object file을 모아서 하나의 바이너리로 만들어 지도록 도와주는 역활  
-object file이 여러개가 있다면 이 여러개를 합쳐서 각각의 영역( text, data 영역들..)을 모아서 하나의 바이너리로 만들어 준다고 보면 됨  
-여기서 말하는 object file이란 사용자가 작성한 프로그램, 표준 c 라이브러리, 사용자 라이브러리등이 된다.   
-즉 위에서 예시로 든 경우는 test.o 파일 하나밖에 없어 보이지만 printf를 사용하기 때문에 이미 만들어진 표준 C 라이브러리 오브젝트 파일을 링크하게 됨  
+object file이 여러개가 있다면 이 여러개를 합쳐서 각각의 영역\( text, data 영역들..\)을 모아서 하나의 바이너리로 만들어 준다고 보면 됨  
+여기서 말하는 object file이란 사용자가 작성한 프로그램, 표준 c 라이브러리, 사용자 라이브러리등이 된다.  
+즉 위에서 예시로 든 경우는 test.o 파일 하나밖에 없어 보이지만 printf를 사용하기 때문에 이미 만들어진 표준 C 라이브러리 오브젝트 파일을 링크하게 됨
 
-
-```
+```text
 ubuntu@ip-172-26-12-50:~/workspace/compile_process$ objdump -s test.o
 
 test.o:     file format elf64-x86-64
@@ -288,15 +298,14 @@ Contents of section .eh_frame:
  0040 00000000 52000000 00410e10 8602430d  ....R....A....C.
  0050 06024d0c 07080000                    ..M.....
 ```
-object file을 objdump 를 해보면 위와 같이 간단하게 나옴 
-여기서 실제로 링킹과정까지 완성을 시킨후 다시 objdump를 진행해보면 실질적으로 실행 될 수 있는 파일로 만들기 위해 여러 기능들이 추가된 것을 확인 할 수 있으며, objectfile에선 보이지 않던 여러 section들도 확인 할 수가 있음 
 
+object file을 objdump 를 해보면 위와 같이 간단하게 나옴 여기서 실제로 링킹과정까지 완성을 시킨후 다시 objdump를 진행해보면 실질적으로 실행 될 수 있는 파일로 만들기 위해 여러 기능들이 추가된 것을 확인 할 수 있으며, objectfile에선 보이지 않던 여러 section들도 확인 할 수가 있음
 
-```
+```text
 gcc -o test test.o
 ```
 
-```
+```text
 ubuntu@ip-172-26-12-50:~/workspace/compile_process$ objdump -s test
 
 test:     file format elf64-x86-64
@@ -484,11 +493,14 @@ Contents of section .comment:
  0020 342e3129 20372e34 2e3000             4.1) 7.4.0.
 ```
 
-code 작성 부터 컴파일 링킹 까지 과정을 봤지만 실제 내부는 더 복잡한 과정들이 있음   
-이부분에 대해선 다른 page에서 설명을 하도록 하겠음...   
-- compiler 
-- linking 에 필요한 부분들
-- 등등 
+code 작성 부터 컴파일 링킹 까지 과정을 봤지만 실제 내부는 더 복잡한 과정들이 있음  
+이부분에 대해선 다른 page에서 설명을 하도록 하겠음...
 
-## references 
-- linking 관련 : <file:///C:/Users/samsung/AppData/Local/Microsoft/Windows/INetCache/IE/OG4URWGQ/11-linking.pdf>
+* compiler 
+* linking 에 필요한 부분들
+* 등등 
+
+### references
+
+* linking 관련 : [file:///C:/Users/samsung/AppData/Local/Microsoft/Windows/INetCache/IE/OG4URWGQ/11-linking.pdf](file:///C:/Users/samsung/AppData/Local/Microsoft/Windows/INetCache/IE/OG4URWGQ/11-linking.pdf)
+

@@ -1,10 +1,12 @@
-# python 
-  
-## type conversion 
-- [[convert a string representation of a Dictionary to a dictionary|python_convert_strOfDict2Dict]]
+# python
 
-## network 
-- [[requests|python_requests]]
+## type conversion
 
+* \[\[convert a string representation of a Dictionary to a dictionary\|python\_convert\_strOfDict2Dict\]\]
 
-## references 
+## network
+
+* \[\[requests\|python\_requests\]\]
+
+## references
+

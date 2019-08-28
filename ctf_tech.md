@@ -1,6 +1,6 @@
-# 
+# heap
 
+## \[\[bins\_of\_heap\|ctf\_tech\_bins\_of\_heap\]\]
 
-## heap 
-### [[bins_of_heap|ctf_tech_bins_of_heap]]
-### [[house_of_orange|ctf_tech_house_of_oragne]] 
+## \[\[house\_of\_orange\|ctf\_tech\_house\_of\_oragne\]\]
+

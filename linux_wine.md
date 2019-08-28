@@ -2,8 +2,10 @@
 
 @wine@wine-stable
 
-## install 
-```
+## install
+
+```text
 sudo apt install wine-stable
 sudo apt install cabextract
 ```
+

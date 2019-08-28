@@ -1,36 +1,45 @@
 # frida
+
 dynamic instrumentation toolkit
 
 ## requirements
-- python – latest 3.x is highly recommended
-- pip
+
+* python – latest 3.x is highly recommended
+* pip
 
 ## install
+
 windows 에서 진행 함
-```
+
+```text
 pip install frida-tools
 ```
 
 ## settings
+
 1. download [firda-server](https://github.com/frida/frida/releases)
 2. device에 옮겨서 실행 해야 함 
-```
-$ adb root # might be required
-$ adb push frida-server /data/local/tmp/ 
-$ adb shell "chmod 755 /data/local/tmp/frida-server"
-$ adb shell "/data/local/tmp/frida-server &"
-```
+
+   ```text
+   $ adb root # might be required
+   $ adb push frida-server /data/local/tmp/ 
+   $ adb shell "chmod 755 /data/local/tmp/frida-server"
+   $ adb shell "/data/local/tmp/frida-server &"
+   ```
+
 3. testing : device의 process list 출력 
-```
-$ frida-ps -U
-```
 
+   ```text
+   $ frida-ps -U
+   ```
 
-## hook 시작 
+## hook 시작
 
-### script 제작 
-타겟에서 수행하고 싶은 것들을 javascript로 제작함 
-```
+### script 제작
+
+타겟에서 수행하고 싶은 것들을 javascript로 제작함
+
+```text
 'use strict;'
 
 if (Java.available) {
@@ -81,7 +90,7 @@ if (Java.available) {
             if (n == -1 ) {
                 //console.log('[DEBUG] => ' + result)
             }
-            
+
             return result;
         }
         StringBuilder.append.overload('java.lang.String').implementation = function (arg1) {
@@ -105,16 +114,14 @@ if (Java.available) {
 
         }
         console.log('[+] StringBuilder.toString() hooked');
-        
+
     }
 )}
 ```
-### apk attach with script 
-```
+
+### apk attach with script
+
+```text
 frida-trace -U -l test.js com.samsung.familyhub
 ```
 
-
-
-
-	

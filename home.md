@@ -1,6 +1,4 @@
-# index
-
-\[\[wiki\]\]
+# Home
 
 ## Programming
 
@@ -15,7 +13,6 @@
 * \[\[pwnable.kr\]\]
 * \[\[temp\]\]
 * \[\[ctf\_tools\]\]
-* \[\[ctf\_tech\]\]
 
 ## Tools
 
@@ -25,15 +22,12 @@
 * \[\[gdb\]\]
 * \[\[objdump\]\]
 * \[\[tmux\]\]
-* \[\[git\]\]
-* \[\[terminator\]\]
 
 ## OS
 
 * \[\[android\]\]
 * \[\[linux\]\]
 * \[\[컴파일과정\|compile\_process\]\]
-* \[\[kali\]\]
 
 ## TODO
 
@@ -51,15 +45,6 @@
 * \[\[hooking\]\]
 * \[\[frida\]\]
 * \[\[docker\]\]
-
-## books
-
-### have to read
-
-* Hacking: The Art of Exploitation, 2nd Edition
-* The Shellcoder's Handbook: Discovering and Exploiting Security Holes, 2nd Edition 
-
-### done
 
 ## Language
 

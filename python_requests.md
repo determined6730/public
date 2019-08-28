@@ -1,31 +1,44 @@
-# [python]requests
+# \[python\]requests
 
-## install 
-### pip install 
+## install
+
+### pip install
+
 ```bash
-pipenv install requests 
+pipenv install requests
 ```
+
 or
-```
+
+```text
 pip install requests
 ```
-### source code 
+
+### source code
+
 get source code
-```
+
+```text
 git clone git://github.com/requests/requests.git
 ```
+
 or
-```
+
+```text
 curl -OL https://github.com/requests/requests/tarball/master
 ```
-install 
-```
+
+install
+
+```text
 cd requests
 pip install .
 ```
 
 ## how to
-### default 
+
+### default
+
 ```python
 import requests 
 url = "http://www.google.com"
@@ -53,10 +66,8 @@ print r
 values =  { 'key':'value' }
 r = requests.post(url,data=values)
 print r
-
 ```
 
+* jupyter python requests example : [http://13.230.201.242:8888/notebooks/python%20/requests.ipynb](http://13.230.201.242:8888/notebooks/python%20/requests.ipynb)
+* python requests 관련 : [https://2.python-requests.org//en/latest/user/quickstart/](https://2.python-requests.org//en/latest/user/quickstart/)
 
-- jupyter python requests example : <http://13.230.201.242:8888/notebooks/python%20/requests.ipynb>
-
-- python requests 관련 : <https://2.python-requests.org//en/latest/user/quickstart/>

@@ -1,11 +1,11 @@
 # vimrc
 
 2019-06-18 사용버전
-- [ ] ctag,cscope 셋팅 
-- [ ] 자동 인덴트 toggle
 
+* [ ] ctag,cscope 셋팅 
+* [ ] 자동 인덴트 toggle
 
-```
+```text
 " 한글 깨짐 현상 
 set fencs=ucs-bom,utf-8,euc-kr.latin1
 " esc 관련해서 셋팅 
@@ -138,6 +138,5 @@ let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 " Set to 1, the preview server will be available to others in your network.
 " By default, the server only listens on localhost (127.0.0.1).
-
 ```
 

@@ -1,6 +1,6 @@
 # docker
 
-```
+```text
 ## docker build images
 sudo docker build -t ctftest0.0 .
 
@@ -21,12 +21,11 @@ sudo docker rm `sudo docker ps -aq`
 
 #docker kill 
 sudo docker kill [container id]
-
-
 ```
 
-## image 관리 
-```
+## image 관리
+
+```text
 ## 현재 이미지 정보를 출력해 줌 
 sudo docker images 
 ## 이미지 삭제 
@@ -35,11 +34,10 @@ sudo docker rmi [image_id]
 sudo docker rmi `sudo docker images -q`
 ## 실행중인 docker kill과 동시에 이미지 삭제
 sudo docker rmi -f [image_id]
-
 ```
 
-
-```
+```text
 # docker container -> host
 docker cp [container name]:[container 내부 경로] [host 파일경로]
 ```
+

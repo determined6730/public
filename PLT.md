@@ -1,2 +1,0 @@
-# PLT (Procedure Linkage Table)
-
