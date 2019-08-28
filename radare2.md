@@ -70,11 +70,22 @@ axt @@ str.* -> 이게 뭐냐...
 ### graph mode 
 ```shell
 vv # graph mode 
+q  # exit graph mode
+
 c # cursor mode   
    ㄴ b # break point
    ㄴ q # exit cursor mode
 / [string] # highlight
+
+# move
 g [offset] # go offset 
+u/U # Undo/redo seek
+
+# functions
+df # define function
+
+F2 # break point
+
 ```
 
 ## references 
