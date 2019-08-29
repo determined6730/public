@@ -1,6 +1,8 @@
 # compile 과정 
 컴파일할때 어떤 일들이 일어나는지 궁금해서..   
 
+[[[testing]]](ttt.md)
+
 test.c -> test.i -> test.s -> test.o -> test   
 
 위 과정에 대해서 간략하게 하나씩 ..
