@@ -6,6 +6,9 @@ test.c -&gt; test.i -&gt; test.s -&gt; test.o -&gt; test
 
 위 과정에 대해서 간략하게 하나씩 ..
 
+[aaa](git.md)
+[bbb](git)
+
 ### 전처리 과정 \(test.c -&gt; test.i\)
 
 "\#"으로 시작하는 전처리 구문들에 대해서 정리하는 작업
