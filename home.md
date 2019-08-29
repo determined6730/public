@@ -3,6 +3,8 @@
 ## Programming
 
 * \[\[python\]\]
+* [python](python)
+* [python](python.md)
 
 ## Web
 
