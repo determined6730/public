@@ -1,7 +1,13 @@
 # compile 과정 
 컴파일할때 어떤 일들이 일어나는지 궁금해서..   
 
-[[[testing]]](ttt.md)
+[testing](ttt.md)
+[testing](security.md)
+[testing](kkk.md)
+[[test|tes2]]
+
+[aaaaaa](testforM.md)
+[9993939](9993939.md)
 
 test.c -> test.i -> test.s -> test.o -> test   
 
