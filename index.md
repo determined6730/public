@@ -2,6 +2,7 @@
 
 ## Programming
 - [[python]]
+- [python](python.md)
 
 ## Web
 - [[REST]]
