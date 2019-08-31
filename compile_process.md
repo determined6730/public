@@ -1,16 +1,6 @@
 # compile 과정 
 컴파일할때 어떤 일들이 일어나는지 궁금해서..   
 
-[testing](ttt.md)
-[testing](security.md)
-[testing](kkk.md)
-[[test|tes2]]
-  
-
-[ccccc,,,](ccccc)  
-[aaaaaa](testforM.md)  
-[999aaaa3939](9993939.md)  
-
 test.c -> test.i -> test.s -> test.o -> test   
 
 위 과정에 대해서 간략하게 하나씩 ..

@@ -4,6 +4,7 @@
 - [[python]]
 - [python](python.md)
 - [python](python)
+- [praat](praat.md)
 
 ## Web
 - [[REST]]
