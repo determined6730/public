@@ -1,6 +1,7 @@
 
 ## Programming
 - [[python]]
+- [praat](praat.md)
 
 ## Web
 - [[REST]]

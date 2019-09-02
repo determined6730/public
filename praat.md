@@ -22,7 +22,7 @@ form Settings
 endform
 ```
 
-``
+```
 # directory 생성하는 부분임 `
 directory$ = chooseDirectory$: "Choose a directory with 'sound_file_extension$'
 ... files to annotate."
