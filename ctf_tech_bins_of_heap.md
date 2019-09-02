@@ -1,2 +1,0 @@
-# bins of heap
-
