@@ -7,9 +7,9 @@ sudo pip install jupyter
 ~~~
 
 ## remote settings
-~~~
+
 1. create config file (~/.jupyter/jupyter_notebook_config.py)
-   ~~~
+   ~~~sh
    jupyter notebook --generate-config
    ~~~
 2. password setting 
@@ -20,7 +20,7 @@ sudo pip install jupyter
    > 'sha1:xxxxx~~xxxx' 와 같은 결과가 나옴
 3. ip & passwd setting 
    jupter_notebook_config.py 파일에 아래 내용 수정 
-   ~~~
+   ~~~python
    c.NotebookApp.ip = '0.0.0.0'
    c.NotebookApp.port = 8888
    c.NotebookApp.port_retries = 50
