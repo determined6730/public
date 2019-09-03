@@ -32,73 +32,52 @@ sudo pip install jupyter
    ~~~
 
 ## shortcut 
-### 셀 선택 모드에서 
-```shell
-# 선택 모드 
-a            # 바로 위에 셀 추가 
-b            # 바로 아래 셀 추가 
-dd           # 셀 삭제   
-x            # 바로 위에 셀 추가 
-c            # 바로 아래 셀 추가 
-p           # 셀 삭제 
-shift+v       # 바로 위에 셀 추가 
-v            # 바로 아래 셀 추가 
-o               # 셀 삭제 
-m              # 마크 다운으로 변경
-y               # 코드로 변경
-s or Ctrl+s     # 저장
-enter           # 해당 셀 입력 모드로 변경
-z              # 실행 취소
-Ctrl+Shift+p    # 명령어 검색
 
-
-```
-
-
-# 선택 모드 
+### 셀 선택 모드 
 - **a** : 바로 위에 셀 추가  
 - **b** : 바로 아래 셀 추가
 - **dd** : 셀 삭제   
-
-dd           # 셀 삭제   
-x            # 바로 위에 셀 추가 
-c            # 바로 아래 셀 추가 
-p           # 셀 삭제 
-shift+v       # 바로 위에 셀 추가 
-v            # 바로 아래 셀 추가 
-o               # 셀 삭제 
-m              # 마크 다운으로 변경
-y               # 코드로 변경
-s or Ctrl+s     # 저장
-enter           # 해당 셀 입력 모드로 변경
-z              # 실행 취소
-Ctrl+Shift+p    # 명령어 검색
-
-
-
-
-| <center>key  | <center>description   |
-| :-----:      | :------:              |
-| a            | 위에 셀 추가          |
-| b            | 아래에 셀 추가        |
-| dd           | 셀 삭제               |
-| x            | 셀 잘라내기           |
-| c            | 셀 복사하기           |
-| p            | command palette 열기  |
-| shift+v      | 셀 위에 붙여넣기      |
-| v            | 셀 아래 붙여넣기      |
-| o            | 결과 열기/닫기 토글   |
-| m            | 마크다운으로 변경     |
-| y            | 코드로 변경           |
-| s or ctrl+s  | 저장                  |
-| enter        | 해당 셀 코드입력 모드 |
-| z            | 실행 취소             |
-| ctrl+shift+p | 명령어 검색           |
-|              |                       |
+- **x** : 셀 잘라내기  
+- **c** : 셀 복사하기  
+- **p** : command palette 열기
+- **Shift+v** : 셀 위에 붙여넣기 
+- **v** : 셀 아래에 붙여넣기  
+- **o** : 결과 열기/닫기 토글  
+- **m** : 마크다운으로 변경  
+- **y** : 코드로 변경
+- **s or Ctrl+s** : 저장
+- **enter** : 코드입력 모드로 변경
+- **z** : 실행 취소
+- **Ctrl+Shift+p** : 명령어 검색
 
 ## issues
 - pwntools가 동작을 하지 않음 
-  
+
+## tips
+### other notebook import  
+다른 노트북을 import시켜주는 module을 설치 진행 
+  ```shell
+  $ sudo pip install import-ipynb
+  ```
+  실제 import를 진행시 아래와 같이 사용하면 됨 
+  ```python
+  import import_ipynb
+  import test
+
+  test.print_test()
+  ```
+### setup python2 or python3 for jupyter
+```bash
+# install python2
+$ sudo python2 -m pip install ipykernel
+$ sudo python2 -m ipykernel install --user
+
+# install python3
+$ sudo python3 -m pip install ipykernel
+$ sudo python3 -m ipykernel install --user
+```
+
+
 ## references
 - shortcut : <https://ljs93kr.tistory.com/54>
 

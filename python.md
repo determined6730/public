@@ -1,7 +1,7 @@
 # python 
 
 ## system command 관련 
-- [execute_shell](execute_shell.md)
+- [execute_shell](python_execute_shell.md)
   
 ## type conversion 
 - [[convert a string representation of a Dictionary to a dictionary|python_convert_strOfDict2Dict]]
@@ -10,4 +10,4 @@
 - [[requests|python_requests]]
 
 
-## [[references]] 
+## references
