@@ -3,6 +3,28 @@
 
 > 스크립트 문법을 제대로 모르고 시간이 부족해서 기존 스크립트를 분석해서 역으로 알아가자.. 
 
+## files
+```
+# open a sound file 
+Read from file: "1.wav" 
+Read from file: "./../../1.wav"
+Open long sound file: "long.wav"
+
+# save a sound file as WAV file ( sound object must be selected! )
+Save as WAV file: "3.wav"
+
+# save a TextGrid as text file ( TextGrid object must be selected! )
+Sava as text file: "4.TextGrid"
+
+# 
+```
+### Create Strings as file list
+
+
+## variables 
+
+
+
 ``` 
 # form이 생성 되는 부분 
 form Settings
@@ -207,3 +229,9 @@ procedure getFiles: .dir$, .ext$
 
 endproc
 ```
+## python module?
+- TextGridTools
+- parselmouth
+- praat-textgrids
+- textgrid
+
