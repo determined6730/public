@@ -6,10 +6,12 @@
 ## Web
 - [[REST]]
 
-## ctfs
+## Challenge
 - [[pwnable.kr]]
 - [[temp]]
 - [[ctf_tools]]
+- [Load of SQL Injection](Load_of_Sql_injection.md)
+
 
 ## Tools 
 - [[jupyter]]
@@ -24,7 +26,12 @@
 - [[linux]]
 - [[컴파일과정|compile_process]]
 
+## Blog 
+- <https://holinder4s.tistory.com/category/Wargame/LOB%28FC3%29>
+- <https://12bme.tistory.com/138>
+
 ## TODO
+- B-Tree
 - [[radare2]]  :  아직 사용법을 전혀 모름.. 
 - relocatable_vs_position-independent-code
 - page
