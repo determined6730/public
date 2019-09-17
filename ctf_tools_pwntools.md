@@ -1,6 +1,4 @@
-# ctf tools
-
-## [pwntools](ctf_tools_pwntools.md)
+# pwntools 
 
 ### install 
 ```
@@ -15,8 +13,9 @@ pip install --upgrade pwntools
 #### recv & send 
 ```
 ```
+
 #### debug 
-```
+~~~
 context.terminal = ['tmux','sp','-h']
 r = process("./ctf")
 script = ```
@@ -24,7 +23,7 @@ b main
 ```
 gdb.attach(r,script)
 r.interactive()
-```
+~~~
 
 
 ## libc-database 
