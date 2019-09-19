@@ -29,6 +29,8 @@
 ## Blog 
 - <https://holinder4s.tistory.com/category/Wargame/LOB%28FC3%29>
 - <https://12bme.tistory.com/138>
+- <https://webdir.tistory.com/235>
+- <https://mrrootable.tistory.com/38>
 
 ## TODO
 - B-Tree
