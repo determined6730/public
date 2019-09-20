@@ -1,6 +1,6 @@
 # pwntools 
 
-### install 
+## install 
 ```
 apt-get update
 apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
@@ -8,7 +8,24 @@ pip install --upgrade pip
 pip install --upgrade pwntools
 ```
 
-### usage
+## usage
+
+- get symbol
+  ```
+  elf = ELF("./xxx.so")
+  readOffset = elf.sym["read"]
+  ```
+
+- find string /bin/sh
+  ```
+
+  => leak_libc = ELF("./leak_libc")
+  => binsh = leak_base_addr + list(local_libc.search('/bin/sh'))[0] 
+
+
+
+  => strings leak_libc | grep bin/sh
+  ```
 
 #### recv & send 
 ```
@@ -16,6 +33,9 @@ pip install --upgrade pwntools
 
 #### debug 
 ~~~
+p = gdb.debug("./ctf") <- 이렇게 해도 됨 
+p = gdb.debug("./ctf",script) <- 이렇게 스크립트를 넣어도 됨
+
 context.terminal = ['tmux','sp','-h']
 r = process("./ctf")
 script = ```
@@ -26,21 +46,4 @@ r.interactive()
 ~~~
 
 
-## libc-database 
-libc version을 찾아줌  
-12bit는 aslr이 걸려 있어도 고정이라는 점을 활용해서 libc version을 찾아냄
-```
-# install 
-git clone https://github.com/niklasb/libc-database.git
-
-# Fetch all the configured libc versions and extract the symbol offsets. It will not download anything twice, so you can also use it to update your database:
-./get 
-
-# add custom libc 
-./add /usr/lib/libc-2.21.so
-
-# find the libc version 
-./find printf 260 puts f30
-
-```
 

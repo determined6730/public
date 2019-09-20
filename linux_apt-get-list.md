@@ -6,5 +6,6 @@ $sudo apt-get install gcc-multilib g++-multilib
 $sudo apt-get install -yy net-tools
 $sudo apt-get install -yy python-pip
 $sudo pip install pwntools
-sudo apt install docker.io
+$sudo apt-get install bpython 
+$sudo apt-get install ruby
 ```
