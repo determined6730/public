@@ -33,6 +33,7 @@
 - <https://mrrootable.tistory.com/38>
 
 ## TODO
+- <https://stackoverflow.com/questions/39861660/does-printf-allocate-memory-in-c>
 - B-Tree
 - [[radare2]]  :  아직 사용법을 전혀 모름.. 
 - relocatable_vs_position-independent-code
