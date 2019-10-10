@@ -1,5 +1,6 @@
 
-## Programming
+## Language
+- [go](go.md)
 - [[python]]
 - [praat](praat.md)
 
@@ -12,8 +13,12 @@
 - [[ctf_tools]]
 - [Load of SQL Injection](Load_of_Sql_injection.md)
 
+## network
+- [mdns](mdns.md)
+
 
 ## Tools 
+- [crosscompile](crosscompile.md)
 - [[jupyter]]
 - [[tcpdump]]
 - [[vim]]
