@@ -83,7 +83,7 @@ $ sudo python3 -m ipykernel install --user
 $ sudo apt install r-base
 
 # install requirements
-sudo apt-get install libzmq3-dev libcurl4-openssl-dev libssl-dev jupyter-core jupyter-client
+sudo apt-get install libzmq3-dev libcurl4-openssl-dorch	sample
 
 # install R packages in R 
 install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
@@ -92,10 +92,10 @@ install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
 IRkernel::installspec()
 IRkernel::installspec(user = FALSE)
 ```
-
-
-
-## references
+sdb shellls
+psystemctl restart edge-orchestration
+wd
+s## references
 - shortcut   : <https://ljs93kr.tistory.com/54>
 - install R  : <https://irkernel.github.io/installation/#linux-panel>
 - kernels    : <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>

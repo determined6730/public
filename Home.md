@@ -25,11 +25,13 @@
 - [[gdb]]
 - [[objdump]]
 - [[tmux]]
+- [remmina](remmina.md)
 
 ## OS
 - [[android]]
 - [[linux]]
 - [[컴파일과정|compile_process]]
+- [ubuntu](ubuntu.md)
 
 ## Blog 
 - <https://holinder4s.tistory.com/category/Wargame/LOB%28FC3%29>
