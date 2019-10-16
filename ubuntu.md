@@ -4,6 +4,7 @@
 
 
 ### Ubuntu 관련 
+### [setting_timezone](ubuntu_setting_timezone.md)
 ### [[16.04 -> 18.04 Update on CLI|linux_updateOnCLI]]
 ### [[apt]]
 ### [[version_check]]

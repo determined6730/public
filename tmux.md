@@ -26,13 +26,11 @@
 
 ### Copy mode
 
-| <center>key | <center>description |
-| :------:    | :------:            |
-| ^B + [      | 스크롤 모드 진입    |
-| Spacebar    | 블락 모드 진입      |
-| Enter       | 복사                |
-| q           | 나가기              |
-| Ctrl B + ]  | 붙여넣기            |
+- *^B + [*         : 스크롤 모드 진입    
+- *Ctrl + Spacebar* : 블락 모드 진입      
+- *alt + w*         : 복사               
+- *q*               : 나가기           
+- *Ctrl B + ]*      : 붙여넣기        
 
 ### pane 
 
@@ -45,18 +43,15 @@
 
 ## tmux config file 
 ~/.tmux.conf 
+```
+set-window-option -g mode-keys vi
+bind -T copy-mode-vi 'v' send -X begin-selection
+bind -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+```
 
 ## tip 
 
-- 스크롤 하는 것   
 <https://blog.outsider.ne.kr/702>  
-셋팅해보고 있는데 전혀 잘 안됨.. 
-
-- up down등의 키를 vim과 같이 만들기   
-tmux.config 파일에 아래 내용 작성
-``` 
-set-window-option -g mode-keys vi
-```  
 <https://stackoverflow.com/questions/31154887/tmux-change-scroll-up-down-keys>  
 <http://teamcrak.tistory.com/400>
 

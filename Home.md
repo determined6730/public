@@ -24,7 +24,7 @@
 - [[vim]]
 - [[gdb]]
 - [[objdump]]
-- [[tmux]]
+- [tmux](tmux.md)
 - [remmina](remmina.md)
 
 ## OS
@@ -40,7 +40,8 @@
 - <https://mrrootable.tistory.com/38>
 
 ## TODO
-- 
+- scapy (ip spoofing)
+-  ASE CBC CRT mode IV 정리..
 - <http://www.mantech.co.kr/micro-service/>
 - <https://stackoverflow.com/questions/39861660/does-printf-allocate-memory-in-c>
 - B-Tree
