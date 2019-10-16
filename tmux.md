@@ -44,9 +44,10 @@
 ## tmux config file 
 ~/.tmux.conf 
 ```
-set-window-option -g mode-keys vi
-bind -T copy-mode-vi 'v' send -X begin-selection
-bind -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+set-window-option -g mode-keys vi 
+bind -T copy-mode-vi 'v' send -X begin-selection 
+bind -T copy-mode-vi 'y' send -X copy-pipe-and-cancel 'xclip -sel clip -i'
+" sudo apt-get install xclip
 ```
 
 ## tip 
