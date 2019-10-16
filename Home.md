@@ -21,7 +21,7 @@
 - [crosscompile](crosscompile.md)
 - [[jupyter]]
 - [[tcpdump]]
-- [[vim]]
+- [vim](vim.md)
 - [[gdb]]
 - [[objdump]]
 - [tmux](tmux.md)

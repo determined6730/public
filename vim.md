@@ -1,5 +1,11 @@
 # vim
 
+## installation 
+아래 vim-gnome 을 사용하는 이유는 시스템 클립보드 사용하기 위해서 
+```
+sudo apt install vim-gnome
+```
+
 ### [[vim 환경설정|vim_environment]]
 
 ### [[vim 단축키|vim_shortcuts]]

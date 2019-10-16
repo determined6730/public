@@ -17,6 +17,9 @@ set paste
 set encoding=utf-8
 set fileencodings=utf-8,cp949
 
+"use OS clipboard
+set clipboard=unnamedplus
+
 set ignorecase
 let mapleader=","
 
