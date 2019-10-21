@@ -34,6 +34,7 @@
 - [ubuntu](ubuntu.md)
 
 ## Blog 
+- <https://bpsecblog.wordpress.com/2016/09/23/ultrarev_hktrace/>
 - <https://holinder4s.tistory.com/category/Wargame/LOB%28FC3%29>
 - <https://12bme.tistory.com/138>
 - <https://webdir.tistory.com/235>
