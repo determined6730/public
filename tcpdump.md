@@ -24,3 +24,5 @@
 sudo apt-get install tcpdump
 ```
 
+- tcpdump not port 22  : 특정 포트 제외 
+

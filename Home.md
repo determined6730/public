@@ -26,6 +26,8 @@
 - [[objdump]]
 - [tmux](tmux.md)
 - [remmina](remmina.md)
+- [netstat](netstat.md)
+
 
 ## OS
 - [[android]]
