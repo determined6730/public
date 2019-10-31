@@ -11,4 +11,7 @@
  - su : root의 비밀 번호를 쳐서 root권한을 획득 하는 것 
 
 
+## [permission](linux_permission.md) 
+
+
 
