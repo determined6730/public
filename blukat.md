@@ -1,9 +1,11 @@
 # blukat
 
+
 ### file bluakt
 ```
 ./blukat: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=cdf0b81df732844320ce82d036143c402f821439, not stripped
 ```
+
 
 ### checksec blukat
 Arch:     amd64-64-little
@@ -56,6 +58,8 @@ buf에 입력을 받은 뒤에 password와 buf를 비교후 else로 가서 exit(
 
 fp 로 부터 읽어온 값을 맞추지 못하면 곧장 exit(0)으로 흘러가게 되는데..    
 이걸 어떻게 뭐 해야하는지...
+
+
 
 
 
