@@ -1,5 +1,4 @@
 # hooking
-#hook#hooking
 
 ## sample code 
 

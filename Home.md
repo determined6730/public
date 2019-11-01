@@ -18,6 +18,7 @@
 
 
 ## Tools 
+- [inetd](inetd.md)
 - [crosscompile](crosscompile.md)
 - [[jupyter]]
 - [[tcpdump]]
