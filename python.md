@@ -10,4 +10,8 @@
 - [[requests|python_requests]]
 
 
+<<<<<<< HEAD
 ## references
+=======
+## [[references]] 
+>>>>>>> c9323ac043a0cc2eb83487b3a13ef70c11503e9c
