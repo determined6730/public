@@ -1,7 +1,8 @@
+# public wiki
 
 ## Language
 - [go](go.md)
-- [[python]]
+- [python](python.md)
 - [praat](praat.md)
 
 ## Web
