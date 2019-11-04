@@ -7,11 +7,7 @@
 - [[convert a string representation of a Dictionary to a dictionary|python_convert_strOfDict2Dict]]
 
 ## network 
-- [[requests|python_requests]]
+- [requests](python_requests.md)
 
-
-<<<<<<< HEAD
 ## references
-=======
-## [[references]] 
->>>>>>> c9323ac043a0cc2eb83487b3a13ef70c11503e9c
+
