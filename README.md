@@ -6,12 +6,12 @@
 - [praat](praat.md)
 
 ## Web
-- [[REST]]
+- [REST](REST.md)
 
 ## Challenge
-- [[pwnable.kr]]
-- [[temp]]
-- [[ctf_tools]]
+- [pwnable.kr](pwnable.kr.md)
+- [temp](temp.md)
+- [ctf_tools](ctf_tools.md)
 - [Load of SQL Injection](Load_of_Sql_injection.md)
 
 ## network
@@ -21,11 +21,11 @@
 ## Tools 
 - [inetd](inetd.md)
 - [crosscompile](crosscompile.md)
-- [[jupyter]]
-- [[tcpdump]]
+- [jupyter](jupyter.md)
+- [tcpdump](tcpdump.md)
 - [vim](vim.md)
-- [[gdb]]
-- [[objdump]]
+- [gdb](gdb.md)
+- [objdump](objdump.md)
 - [tmux](tmux.md)
 - [remmina](remmina.md)
 - [netstat](netstat.md)
