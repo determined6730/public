@@ -71,6 +71,10 @@
 ## Language
 - [[smali]]
 
+* [blog](blog.md) 
+    * [gitbook](blog_gitbook.md)
+
+
 
 test
 
