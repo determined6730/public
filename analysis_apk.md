@@ -24,7 +24,7 @@ adb pull data/app/com.lgeha.nuts-uXMVK36q5J3VG6DQBiQhlA==/base.apk ./
 ## static 
 ## dynamic 
 
-## [[frida]] 를 이용해 hooking
+## frida 를 이용해 hooking
 
 ## tools 
 - [tcpdump](https://www.androidtcpdump.com/android-tcpdump/downloads)
