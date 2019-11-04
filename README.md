@@ -14,12 +14,6 @@
 - [ctf_tools](ctf_tools.md)
 - [Load of SQL Injection](Load_of_Sql_injection.md)
 
-> [!TIP]  
-> this is the tip
-
-> [!NOTE]
-> this is the note
-
 ## network
 - [mdns](mdns.md)
 
@@ -75,7 +69,7 @@
 - [[smali]]
 
 
-
+test
 
 
 ## docs 
