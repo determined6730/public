@@ -1,9 +1,6 @@
 # praat
 
 
-> 스크립트 문법을 제대로 모르고 시간이 부족해서 기존 스크립트를 분석해서 역으로 알아가자.. 
-
-<<<<<<< HEAD
 ## files
 ```
 # open a sound file 
@@ -26,8 +23,6 @@ Sava as text file: "4.TextGrid"
 
 
 
-=======
->>>>>>> c9323ac043a0cc2eb83487b3a13ef70c11503e9c
 ``` 
 # form이 생성 되는 부분 
 form Settings
