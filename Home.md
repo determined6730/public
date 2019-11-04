@@ -1,9 +1,9 @@
 # public wiki
 
 ## Language
-- [go](go.md)
-- [python](python.md)
-- [praat](praat.md)
+* [go](go.md)
+* [python](python.md)
+* [praat](praat.md)
 
 ## Web
 - [REST](REST.md)
