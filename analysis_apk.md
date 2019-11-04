@@ -1,9 +1,9 @@
 # analysis apk
 
-0. [get application](#0)
-1. [extract source list](#1)
+0. [get application](#get-application)
+1. [extract source list](#extract-source-list)
 
-## get application <a name="0"></a>
+## get application
 - check apk list 
 ```bash
 # pm list packages -f | grep [app name]
@@ -18,7 +18,7 @@ package:/data/app/com.lgeha.nuts-uXMVK36q5J3VG6DQBiQhlA==/base.apk=com.lgeha.nut
 adb pull data/app/com.lgeha.nuts-uXMVK36q5J3VG6DQBiQhlA==/base.apk ./
 ```
 
-## extract source list <a name="1"></a>
+## extract source list
 
 
 ## static 
