@@ -17,4 +17,5 @@ else:
     print exec_command("git add *")
     print exec_command("git commit -m \"autocommit\"")
     print exec_command("git push origin master")
+    print exec_command("git push code master")
 
