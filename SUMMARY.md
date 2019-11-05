@@ -66,15 +66,15 @@
 - [[frida]]
 - [[docker]]
 
-## Language
-- [[smali]]
+* Language
+    * [smali](smali.md)
+    * [dot_net](dot_net.md)
 
 * [blog](blog.md) 
     * [gitbook](blog_gitbook.md)
 
 
 
-test
 
 
 ## docs 
