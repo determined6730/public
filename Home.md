@@ -15,22 +15,26 @@
         * [libc-database](ctf_tools_libc-database.md)
     * [Load of SQL Injection](Load_of_Sql_injection.md)
 
-## network
-- [mdns](mdns.md)
+* network
+    * [mdns](mdns.md)
 
 
-* Tools 
-- [inetd](inetd.md)
-- [crosscompile](crosscompile.md)
-- [jupyter](jupyter.md)
-- [tcpdump](tcpdump.md)
-- [vim](vim.md)
-- [gdb](gdb.md)
-- [objdump](objdump.md)
+* Tools
+* common
+    * [jupyter](jupyter.md)
+    * [vim](vim.md)
+    * [netstat](netstat.md)
+* linux
+    * [gdb](gdb.md)
     * [tmux](tmux.md)
-- [remmina](remmina.md)
-- [netstat](netstat.md)
-
+    * [remmina](remmina.md)
+    * [objdump](objdump.md)
+    * [inetd](inetd.md)
+    * [crosscompile](crosscompile.md)
+    * [tcpdump](tcpdump.md)
+* windows
+    * dnspy
+    * process_explorer
 
 ## OS
 - [[android]]
