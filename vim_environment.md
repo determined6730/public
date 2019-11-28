@@ -6,6 +6,12 @@
 
 
 ```
+" indent
+set smartindent
+set tabstop=4
+set expandtab
+set shiftwidth=4 " >> 또는 << 키로 들여 쓰기 할때 스페이스의 갯수. 기본값 8
+
 " 한글 깨짐 현상 
 set fencs=ucs-bom,utf-8,euc-kr.latin1
 " esc 관련해서 셋팅 

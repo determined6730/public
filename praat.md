@@ -42,11 +42,7 @@ form Settings
 endform
 ```
 
-<<<<<<< HEAD
 ```
-=======
-``
->>>>>>> c9323ac043a0cc2eb83487b3a13ef70c11503e9c
 # directory 생성하는 부분임 `
 directory$ = chooseDirectory$: "Choose a directory with 'sound_file_extension$'
 ... files to annotate."
@@ -55,48 +51,9 @@ directory$ = chooseDirectory$: "Choose a directory with 'sound_file_extension$'
 tiers$ = interval_tiers$ + " " + point_tiers$
 ```
 
+
+## generate textGrid & insert boundary 
 ```
-backup 
-
-# USAGE:
-#
-# This Praat script makes the process of annotating multiple sound files go
-# faster by automating most of the mouse-clicks that are needed to create and
-# save new TextGrid files. It takes a folder of sound files. For each sound
-# file, the script creates a new TextGrid with the annotation tiers that you
-# list in the settings window, then opens that TextGrid along with its
-# accompanying sound file. The script pauses while you create annotations for
-# the sound file. When you are done creating annotations, press "OK" in the
-# pop-up window to save the TextGrid to a file with the same filename as the
-# sound file plus a ".TextGrid" extension. After saving the file, the script
-# moves on to the next sound file in the folder.
-#
-# SETTINGS:
-#
-# Interval tiers:               Provide a list of names for the interval tiers
-#                               (if any) that will be created in each new
-#                               TextGrid. The tier names should be separated by
-#                               spaces. The default will create two interval
-#                               tiers named "Mary" and "John".
-# Point tiers:                  Provide a list of names for the point tiers
-#                               (if any) in each new TextGrid, with the tier
-#                               names separated by spaces. The default will
-#                               create one point tier named "bell".
-# If TextGrid already exists:   If the folder that you select already contains
-#                               a TextGrid with the same name as one of the
-#                               sound files, what should the script do with
-#                               that sound file? The default is to skip that
-#                               sound file, or you can also choose to be
-#                               prompted for a new TextGrid filename, or to
-#                               open the existing TextGrid rather than creating
-#                               a new one.
-# Sound file extensions:        The extension of the sound files in your folder
-#                               (.wav, .flac, etc).
-#
-# After you configure the settings, press OK to choose the directory of sound
-# files to annotate.
-
-
 form Settings
     sentence Interval_tiers Utterance Word Rhyme
     sentence Point_tiers SynBoundary
@@ -106,7 +63,6 @@ form Settings
         option open and edit the existing TextGrid
     word Sound_file_extension .wav
     comment Press OK to choose a directory of sound files to annotate.
-
 endform
 
 directory$ = chooseDirectory$: "Choose a directory with 'sound_file_extension$'
@@ -114,6 +70,10 @@ directory$ = chooseDirectory$: "Choose a directory with 'sound_file_extension$'
 @getFiles: directory$, sound_file_extension$
 
 tiers$ = interval_tiers$ + " " + point_tiers$
+
+# getFiles : directory에서 sound_file_extension들만 가지고온 것 
+# length : 위에서의 그 갯수 
+# 즉 아래 for구문은  해당 디렉토리에서 wav파일의 수만큼 반복하는 것 
 
 for i to getFiles.length
     soundfile = Read from file: getFiles.files$ [i]
@@ -231,12 +191,10 @@ procedure getFiles: .dir$, .ext$
 
 endproc
 ```
-<<<<<<< HEAD
+
 ## python module?
 - TextGridTools
 - parselmouth
 - praat-textgrids
 - textgrid
 
-=======
->>>>>>> c9323ac043a0cc2eb83487b3a13ef70c11503e9c

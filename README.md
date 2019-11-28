@@ -19,7 +19,7 @@
 - [mdns](mdns.md)
 
 
-## Tools 
+* Tools 
 - [inetd](inetd.md)
 - [crosscompile](crosscompile.md)
 - [jupyter](jupyter.md)
@@ -27,7 +27,7 @@
 - [vim](vim.md)
 - [gdb](gdb.md)
 - [objdump](objdump.md)
-- [tmux](tmux.md)
+    * [tmux](tmux.md)
 - [remmina](remmina.md)
 - [netstat](netstat.md)
 

@@ -8,7 +8,7 @@ sudo apt install vim-gnome
 
 ### [[vim 환경설정|vim_environment]]
 
-### [[vim 단축키|vim_shortcuts]]
+### [vim 단축키](vim_shortcuts.md)
 
 ### vim plugin
 - [[Vim-Plug|vim_vim-plug]] : vim plugin을 관리하기 위함
