@@ -4,6 +4,7 @@
     * [go](go.md)
     * [python](python.md)
     * [praat](praat.md)
+    * [CSharp](CSharp.md)
 
 * Web
     * [REST](REST.md)
@@ -21,8 +22,8 @@
 
 * Tools
     * [common](tools_common.md)
-        * [jupyter](jupyter.md)
-        * [vim](vim.md)
+        * [jupyter](tools_common_jupyter.md)
+        * [vim](tools_common_vim.md)
         * [netstat](netstat.md)
     * [linux](tools_linux.md)
         * [gdb](gdb.md)
