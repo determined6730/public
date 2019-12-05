@@ -9,7 +9,8 @@
 * Web
     * [REST](REST.md)
 
-* Challenge
+* CTFs
+    * [tech](CTFs_tech.md)
     * [pwnable.kr](pwnable.kr.md)
     * [temp](temp.md)
     * [ctf_tools](ctf_tools.md)
