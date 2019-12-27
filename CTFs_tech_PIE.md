@@ -1,7 +1,8 @@
-# PIC(Position Independent Code) & PIE(Position Independent Executable)
-PIC와 PIE에 대해서 설명하고자 하는데 [[library]] 에 대해서 지식을 알고 있으면 좋다.
-
-##PIC
+# PIE(Position Independent Executable)
+  
+1. pie가 걸린것과 안걸린것의 차이
+2. aslr과의 연관관계 설명 
+    시스템에 aslr이 꺼져있을 경우 ? 켜있을 경우 차이? 
 
 
 ## PIE 
@@ -11,12 +12,13 @@ PIE가 걸린 파일과 안걸린 파일을 보면 좀더 확연히 차이를 �
 
 ## PIE vs Non PIE
 ### compile 
-ubuntu 18.04 , gcc 7.4 에선 default로 PIE가 적용되어 있어 *-no-pie* 옵션을 통해서 강제로 적용 안시킬 수 있음 
+ubuntu 18.04 , gcc 7.4 에선 default로 PIE가 적용되어 있음.  
+*-no-pie* 옵션을 통해 해제 할수 있음. 
 ```
 # pie 해제
-gcc -no-pie -o test test.c
+gcc -no-pie -o no_pie test.c
 # pie 적용
-gcc -fPIE -o test_pie test.c
+gcc -fPIE -o pie test.c
 ```
 
 ### pie check 
@@ -24,11 +26,11 @@ gcc -fPIE -o test_pie test.c
 ```
 chekcsec [filename] 
 ```
-[[/images/pie/pie1.PNG]]  
+![pie1](./images/pie/checksec_pie.png)
 ```
 file [filename]
 ```
-[[/images/pie/pie4.png]]  
+![pie2](./images/pie/file_pie.png)
 
 
 ### symbol check
@@ -39,9 +41,7 @@ objdump -d test_pie
 ```
 
 왼쪽 스크린샷이 *test_pie* 이며 우측 스크린샷이 *test* 파일임   
-[[/images/pie/pie2.png]]    
 symbol이 맵핑된 주소를 보게 되면 PIE가 적용된 경우 offset 값으로  맵핑되어 있으며, PIE가 적용 안되었을 때에는 절대값으로 맵핑되어 있음.gdb를 통해서 실제 실행될 때 주소값을 확인해 보면 PIE가 적용되지 않은 실행파일은 disassemble해서 보인 주소값이 그대로 사용되며 PIE 가 적용된 파일은 실행될 때 결정된 image base address에 해당 symbol의 주소값(offset)이 더해져 사용된다.
-[[/images/pie/pie3.png]]
 
 
 

@@ -11,6 +11,7 @@
 
 * CTFs
     * [tech](CTFs_tech.md)
+        * [PIE](CTFs_tech_PIE.md) 
     * [pwnable.kr](pwnable.kr.md)
     * [temp](temp.md)
     * [ctf_tools](ctf_tools.md)
@@ -52,6 +53,22 @@
 - <https://mrrootable.tistory.com/38>
 
 ## TODO
+- 왜 0x400000인가? in x86_64에서..
+```
+ld -verbose | grep -i text-segment
+  PROVIDE (__executable_start = SEGMENT_START("text-segment", 0x400000)); . = SEGMENT_START("text-segment", 0x400000) + SIZEOF_HEADERS;
+
+https://www.tutorialfor.com/questions-48876.htm
+       --image-base value
+           Use value as the base address of your program or dll.  This is the
+           lowest memory location that will be used when your program or dll
+           is loaded.  To reduce the need to relocate and improve performance
+           of your dlls, each should have a unique base address and not
+           overlap any other dlls.  The default is 0x400000 for executables,
+           and 0x10000000 for dlls.  [This option is specific to the i386 PE
+           targeted port of the linker]
+
+```
 - scapy (ip spoofing)
 -  ASE CBC CRT mode IV 정리..
 - <http://www.mantech.co.kr/micro-service/>
