@@ -21,7 +21,6 @@
 * network
     * [mdns](mdns.md)
 
-
 * Tools
     * [common](tools_common.md)
         * [jupyter](tools_common_jupyter.md)
@@ -39,7 +38,9 @@
         * [dnspy](dnspy.md)
         * [process_explorer](process_explorer.md)
 
-## OS
+* kernel
+* ELF
+    * [ld.so](elf_ld.so.md)
 - [[android]]
 - [[linux]]
 - [[컴파일과정|compile_process]]
