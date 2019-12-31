@@ -22,5 +22,11 @@ Vuln: Input not null terminated. Address leaks through stack data copied over to
 - out of bound , uninitialized stack pointer 
 : <https://changochen.github.io/2018-09-01-Tokyo-Western-CTF-2018.html>
 
+## system call 
+https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system-calls/
+
+
+## 용어 
+- ABIs : application binary interface 
 
 
