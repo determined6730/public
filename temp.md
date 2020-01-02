@@ -28,5 +28,10 @@ https://blog.packagecloud.io/eng/2016/04/05/the-definitive-guide-to-linux-system
 
 ## 용어 
 - ABIs : application binary interface 
+- vsyscall 
+
+## understaning the memory layout of linux executables 
+https://gist.github.com/CMCDragonkai/10ab53654b2aa6ce55c11cfc5b2432a4
+
 
 
