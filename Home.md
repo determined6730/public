@@ -12,6 +12,7 @@
 * CTFs
     * [tech](CTFs_tech.md)
         * [PIE](CTFs_tech_PIE.md) 
+        * [relro](CTFs_tech_relro.md)
     * [pwnable.kr](pwnable.kr.md)
     * [temp](temp.md)
     * [ctf_tools](ctf_tools.md)
