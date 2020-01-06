@@ -1,28 +1,36 @@
 # public wiki
 
-* Language
+* shortcuts
+    - [chrome](shortcuts_chrome.md) 
+    - [vim](shortcuts_vim.md)
+    - [vimwiki](shortcuts_vimwiki.md)
+    - [tmux](shortcuts_tmux.md) 
+
+* language
     * [go](go.md)
     * [python](python.md)
     * [praat](praat.md)
-    * [CSharp](CSharp.md)
+    * [csharp](csharp.md)
 
-* Web
-    * [REST](REST.md)
+* web
+    * [rest](rest.md)
 
-* CTFs
-    * [tech](CTFs_tech.md)
-        * [PIE](CTFs_tech_PIE.md) 
-        * [relro](CTFs_tech_relro.md)
+* ctfs
+    * tech
+        * [PIE](ctfs_tech_pie.md) 
+        * [RELRO](ctfs_tech_relro.md)
+        * [ASLR](ctfs_tech_aslr.md)
+        * [load of sql injection](ctfs_tech_load_of_sql_injection.md)
+
     * [pwnable.kr](pwnable.kr.md)
     * [temp](temp.md)
     * [ctf_tools](ctf_tools.md)
         * [libc-database](ctf_tools_libc-database.md)
-    * [Load of SQL Injection](Load_of_Sql_injection.md)
 
 * network
     * [mdns](mdns.md)
 
-* Tools
+* tools
     * [common](tools_common.md)
         * [jupyter](tools_common_jupyter.md)
         * [vim](tools_common_vim.md)
