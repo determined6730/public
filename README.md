@@ -49,8 +49,14 @@
 
 * kernel
 	* [system-call](kernel_system-call.md)
+
 * ELF
     * [ld.so](elf_ld.so.md)
+
+* temporary 
+    * [blah](blah.md)
+
+
 - [[android]]
 - [[linux]]
 - [[컴파일과정|compile_process]]
