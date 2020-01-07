@@ -25,12 +25,12 @@
     * [pwnable.kr](pwnable.kr.md)
     * [temp](temp.md)
     * [ctf_tools](ctf_tools.md)
-        * [libc-database](ctf_tools_libc-database.md)
 
 * network
     * [mdns](mdns.md)
 
 * tools
+    [tool_list](tools_tool_list.md)
     * [common](tools_common.md)
         * [jupyter](tools_common_jupyter.md)
         * [vim](tools_common_vim.md)
@@ -42,10 +42,12 @@
         * [objdump](objdump.md)
         * [inetd](inetd.md)
         * [crosscompile](crosscompile.md)
+        * [libc-database](tools_linux_libc-database.md)
         * [tcpdump](tcpdump.md)
     * [windows](tools_windows.md)
         * [dnspy](dnspy.md)
         * [process_explorer](process_explorer.md)
+        * [x64dbg](tools_windows_x64dbg.md)
 
 * kernel
 	* [system-call](kernel_system-call.md)
