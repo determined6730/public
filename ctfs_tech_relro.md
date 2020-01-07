@@ -1,9 +1,13 @@
 # RELRO(Relocation Read-Only)
-data 영역을 read-only로 하여금 data overwite를 할 수 없게 하는 기법   
+binary or process의 data section을 read-only로 변경하여 해당 section들을 overwirte 등의 attack 으로 부터 보호하는 기법   
+(.ctors, .dtors, .jcr, .dynamic, .got)  
+relro에는 2가지 mode 가 존재하며 build 시 option을 통해 선택 가능 함.   
 
-> 어떤 부분들이 있는지 확인해보자. 
+위 보호기법이 나오게 된 원인은 [dynamic_link](elf_dynamic_link.md)방식 때문임.   
 
-각 기법들에 대해서 동작 원리를 해보자 
+
+
+*[plt_got](elf_dynamic_link.md)*
 
 ## RELRO mode 
 |                | partial                                   | full                                          |

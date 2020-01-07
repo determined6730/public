@@ -54,12 +54,21 @@
 
 * ELF
     * [ld.so](elf_ld.so.md)
+    * [dynamic_link](elf_dynamic_link.md)
 
 * temporary 
     * [blah](blah.md)
 
+* OS
+    * [linux](OS_linux.md)
+    * android 
+        * [OS_android_booting](OS_android_booting.md)
+        * [analysis android application](OS_android_apk.md)
 
-- [[android]]
+
+-----------------
+archive
+
 - [[linux]]
 - [[컴파일과정|compile_process]]
 - [ubuntu](ubuntu.md)
