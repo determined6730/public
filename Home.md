@@ -21,6 +21,7 @@
         * [RELRO](ctfs_tech_relro.md)
         * [ASLR](ctfs_tech_aslr.md)
         * [load of sql injection](ctfs_tech_load_of_sql_injection.md)
+        * [got_overwrite](ctfs_tech_got_overwrite.md)
 
     * [pwnable.kr](pwnable.kr.md)
     * [temp](temp.md)
@@ -63,6 +64,7 @@
     * [linux](OS_linux.md)
     * android 
         * [OS_android_booting](OS_android_booting.md)
+            *  [AVB](OS_android_booting_AVB.md)
         * [analysis android application](OS_android_apk.md)
 
 
