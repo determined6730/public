@@ -43,7 +43,9 @@ apktool d sample.apk
 ```
 d2j-dex2jar.sh classes.dex
 ```
-5. JD-GUI(<http://jd.benow.ca/>)을 이용해서 분석 시작 
+5. JD-GUI(<http://jd.benow.ca/>)을 이용해서 분석 시작 or cfr decompiler 이용  
+   java -jar cfr_0_81.jar <디컴파일할 jar 파일 경로> --outputdir <디컴파일된 소스 파일이 등록될 경로>
+
 
 ## repackaging
 ### apktool rebuild 

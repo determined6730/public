@@ -66,13 +66,24 @@
         * [OS_android_booting](OS_android_booting.md)
             *  [AVB](OS_android_booting_AVB.md)
         * [analysis android application](OS_android_apk.md)
+        
+
+* my Settings
+    * ubuntu
+        * [ftp](settings_ubuntu_ftp.md)
+        * [ssh](settings_ubuntu_ssh.md) 
+    * windows
+    * mac
 
 ----------------------------------------------------------------------
 
 * archive
+
+    * [elf_section_segment](elf_section_segment.md)
     * [booting](booting.md) 
     * [firmware_reversing](firmware_reversing.md)
     * [sboot](sboot.md)
+    * [teegris](teegris.md)
     - [[linux]]
     - [[컴파일과정|compile_process]]
     - [ubuntu](ubuntu.md)

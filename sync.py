@@ -15,6 +15,7 @@ if "nothing to commit, working tree clean" in re:
     print "nothing"
 else:
     print exec_command("git add *")
+    print exec_command("git add -u :/")
     print exec_command("git commit -m \"autocommit\"")
     print exec_command("git push origin master")
     print exec_command("git push code master")
