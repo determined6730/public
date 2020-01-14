@@ -39,6 +39,12 @@ SWI(Software Interrupts) WSM(World Shared Memory)를 통해서 NWd SWd사이를 
 
 
 
+## invokecommand 
+### TA_InvokeCommandEntryPoint 
+This function is called whenever a client invokes a Trusted Application command. 
+
+
+
 
 ## references
 - http://allsoftwaresucks.blogspot.com/2019/05/reverse-engineering-samsung-exynos-9820.html
