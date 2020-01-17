@@ -32,6 +32,9 @@ allow httpd_t httpd_sys_content_t : file { ioctl read getattr lock open };
 위의 의미는 httpd_t 주체가 httpd_sys_content_t 에 연결이 가능하며 관련 작업은 ioctl... 등등이 가능하단 의미이다.   
 
 
+## android 에서의 policy
+
+
 ## 동작 모드
 ```
 현재 적용되어있는 지확인 

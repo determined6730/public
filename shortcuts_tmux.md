@@ -3,14 +3,16 @@
 Fn : Ctrl + b
 
 ## Pane 관련 
-|                        |                     |
-|------------------------|---------------------|
-| Fn -> ,                | rename current pane |
-| Fn -> %                | vertical split      |
-| Fn -> "                | horizental split    |
-| Fn -> x                | kill pane           |
-| Fn -> o                | swap pane           |
-| Fn -> q                | show pane number    |
+|         |                            |
+|---------|----------------------------|
+| Fn -> , | rename current pane        |
+| Fn -> % | vertical split             |
+| Fn -> " | horizental split           |
+| Fn -> x | kill pane                  |
+| Fn -> o | swap pane                  |
+| Fn -> q | show pane number           |
+| Fn -> w | show interactive list      |
+| Fn -> z | zoom in on the active pane |
 
 ## Resize Panes 
 
