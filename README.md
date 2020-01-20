@@ -89,6 +89,8 @@
     - [ubuntu](ubuntu.md)
     - [selinux](selinux.md)
     - [epoll](epoll.md)
+    - [binder](bind.md)
+    - [ipc](ipc.md)
    
 
     ## Blog 
