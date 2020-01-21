@@ -91,6 +91,8 @@
     - [epoll](epoll.md)
     - [binder](bind.md)
     - [ipc](ipc.md)
+    - HAL
+    - [HIDL](HIDL.md)
    
 
     ## Blog 
