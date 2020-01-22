@@ -93,6 +93,7 @@
     - [ipc](ipc.md)
     - HAL
     - [HIDL](HIDL.md)
+    - [android_build](android_build.md)
    
 
     ## Blog 
