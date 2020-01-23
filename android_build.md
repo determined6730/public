@@ -1,7 +1,7 @@
 # android build
 
 
-## 1. set environment 
+## Setup
 ### bashrc 
 ```
 # make the folder ( mkdir ~/bin)
@@ -21,11 +21,9 @@ $ repo init -u https://android.googlesource.com/platform/manifest
 # master 이외의 브랜치를 체크아웃하려면.. 
 # repo init -u https://android.googlesource.com/platform/manifest -b android-4.0.1_r1
 $ repo sync
-
+$ source build/envsetup.sh
 ```
 
-## 2. 
+##  
 ```
-
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 ```
