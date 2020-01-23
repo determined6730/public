@@ -5,7 +5,7 @@
 ## Ubuntu
 - [X] ssh-openserver
 - [ ] ftpd
-- [ ] NAS mount
+- [X] NAS mount
 - [ ] 
 
 ## Windows
@@ -20,5 +20,6 @@
 * [ ] winscp
 * [X] chrome 
 * [X] kakaotalk
+* [ ] Dexpot?
 
 ## Mac
