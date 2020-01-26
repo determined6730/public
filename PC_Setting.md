@@ -21,5 +21,6 @@
 * [X] chrome 
 * [X] kakaotalk
 * [ ] Dexpot?
+* [ ] Station
 
 ## Mac

@@ -1,7 +1,3 @@
-# android build
-
-
-## Setup
 ### bashrc 
 ```
 # make the folder ( mkdir ~/bin)
