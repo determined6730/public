@@ -4,7 +4,6 @@
     - [chrome](shortcuts_chrome.md) 
     - [vim](shortcuts_vim.md)
     - [vimwiki](shortcuts_vimwiki.md)
-    - [tmux](shortcuts_tmux.md) 
 
 * language
     * [go](go.md)
@@ -62,9 +61,6 @@
 
 * OS
     * [linux](OS_linux.md)
-    * android 
-        * [OS_android_booting](OS_android_booting.md)
-            *  [AVB](OS_android_booting_AVB.md)
         * [analysis android application](OS_android_apk.md)
         
 

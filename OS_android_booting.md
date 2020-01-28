@@ -64,4 +64,3 @@ DM은 LVM(Logical Volume Manager)에 기반하여 dm-crypt알고리즘을 이용
   이자료 좋음.. 
 
 
-
